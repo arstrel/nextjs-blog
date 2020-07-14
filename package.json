@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "artemio.tech",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "4.10.0",
+    "@material-ui/icons": "4.9.1",
+    "classnames": "^2.2.6",
     "date-fns": "^2.14.0",
     "gray-matter": "^4.0.2",
     "next": "9.3.5",
     "node-fetch": "^2.6.0",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-swipeable-views": "^0.13.9",
     "remark": "^12.0.0",
     "remark-html": "^11.0.2"
   }
