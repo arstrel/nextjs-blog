@@ -14,10 +14,12 @@ import HeaderLinks from "../components/HeaderLinks.js";
 import Parallax from "../components/Parallax.js";
 import GoalsSection from "../components/GoalsSection.js";
 import ProjectsSection from "../components/ProjectsSection.js";
+import Quote from "../components/Quote.js";
 
-import styles from "../styles/profilePage.js";
+import stylesProfile from "../styles/profilePage.js";
+import stylesGoals from "../styles/goalsStyle.js";
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
 
 export default function ProfilePage(props) {
   const classes = useStyles();
@@ -56,8 +58,8 @@ export default function ProfilePage(props) {
                     />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Artem Streltsov</h3>
-                    <h6>Full Stack Web Developer</h6>
+                    <h2 className={classes.title}>Artem Streltsov</h2>
+                    <h5>Full Stack Web Developer</h5>
                     <Button
                       justIcon
                       link
@@ -90,11 +92,32 @@ export default function ProfilePage(props) {
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
-                JavaScript, MongoDB, MySQL, Express.js, GraphQL, Apollo,
-                React.js, Next.js, Node.js, GraphQL, HTML5, CSS/SCSS, Responsive
-                Design, Git, GitHub, Bitbucket, Jira, Agile workflow
-              </p>
+              <Quote
+                text="The noblest pleasure is the joy of understanding."
+                author="Leonardo da Vinci"
+              />
+              <div className={classes.section}>
+                I have experience in using the following technologies:
+                <GridContainer className={classes.techItemsContainer}>
+                  <GridItem className={classes.techListItem}>JavaScript</GridItem>
+                  <GridItem className={classes.techListItem}>React.js</GridItem>
+                  <GridItem className={classes.techListItem}>Next.js</GridItem>
+                  <GridItem className={classes.techListItem}>Node.js</GridItem>
+                  <GridItem className={classes.techListItem}>Express.js</GridItem>
+                  <GridItem className={classes.techListItem}>Apollo</GridItem>
+                  <GridItem className={classes.techListItem}>GraphQL</GridItem>
+                  <GridItem className={classes.techListItem}>MongoDB/Mongoose</GridItem>
+                  <GridItem className={classes.techListItem}>MySQL/Sequelize</GridItem>
+                  <GridItem className={classes.techListItem}>HTML5</GridItem>
+                  <GridItem className={classes.techListItem}>CSS/SCSS</GridItem>
+                  <GridItem className={classes.techListItem}>Responsive Design</GridItem>
+                  <GridItem className={classes.techListItem}>Git</GridItem>
+                  <GridItem className={classes.techListItem}>GitHub</GridItem>
+                  <GridItem className={classes.techListItem}>Bitbucket</GridItem>
+                  <GridItem className={classes.techListItem}>Jira</GridItem>
+                  <GridItem className={classes.techListItem}>Agile workflow</GridItem>
+                </GridContainer>
+              </div>
             </div>
             <GoalsSection />
             <ProjectsSection />

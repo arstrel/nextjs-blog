@@ -52,7 +52,7 @@ export default function ProjectsSection() {
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button round color="primary" className={classes.margin5}>
-                  Know more
+                  See live
                 </Button>
               </CardFooter>
             </Card>
@@ -60,11 +60,7 @@ export default function ProjectsSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src="/images/bar.jpg"
-                  alt="..."
-                  className={imageClasses}
-                />
+                <img src="/images/bar.jpg" alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 Teep 100%
@@ -81,7 +77,7 @@ export default function ProjectsSection() {
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button round color="primary" className={classes.margin5}>
-                  Know more
+                  See live
                 </Button>
               </CardFooter>
             </Card>
@@ -89,11 +85,7 @@ export default function ProjectsSection() {
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img
-                  src="/images/fun.jpg"
-                  alt="..."
-                  className={imageClasses}
-                />
+                <img src="/images/fun.jpg" alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
                 You got more projects, right?
@@ -108,7 +100,7 @@ export default function ProjectsSection() {
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button round color="primary" className={classes.margin5}>
-                  Know more
+                  See live
                 </Button>
               </CardFooter>
             </Card>
