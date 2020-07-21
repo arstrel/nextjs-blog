@@ -1,19 +1,21 @@
-import React from "react";
+import React from 'react';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
-import GroupWork from "@material-ui/icons/GroupWork";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+import GroupWork from '@material-ui/icons/GroupWork';
+import VerifiedUser from '@material-ui/icons/VerifiedUser';
+import Fingerprint from '@material-ui/icons/Fingerprint';
 // core components
-import GridContainer from "./GridContainer.js";
-import GridItem from "./GridItem.js";
-import InfoArea from "./InfoArea.js";
+import GridContainer from './GridContainer.js';
+import GridItem from './GridItem.js';
+import InfoArea from './InfoArea.js';
+import { skillset } from '../lib/constants';
 
-import styles from "../styles/goalsStyle.js";
+import stylesProfile from '../styles/profilePage.js';
+import stylesGoals from '../styles/goalsStyle.js';
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
 
 export default function GoalsSection() {
   const classes = useStyles();
@@ -22,14 +24,18 @@ export default function GoalsSection() {
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Making Websites Stand Out</h2>
-          <h5 className={classes.description}>
-            I am always aspired to further my knowledge & experience in both
-            front and back end software engineering technologies. Throughout my
-            life, with meticulous attention to detail and methodical nature, I
-            always had been fascinated with technology and had a passion for
-            solving problems. Result-oriented web developer with a high desire
-            to learn and use latest technology trends.
-          </h5>
+          <div className={classes.description}>
+            <div className={classes.section}>
+              I have experience in using the following technologies:
+              <GridContainer className={classes.techItemsContainer}>
+                {skillset.map((el, i) => (
+                  <GridItem key={i} className={classes.techListItem}>
+                    {el}
+                  </GridItem>
+                ))}
+              </GridContainer>
+            </div>
+          </div>
         </GridItem>
       </GridContainer>
       <div>
