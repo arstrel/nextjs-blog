@@ -1,20 +1,21 @@
-import React from "react";
+import React from 'react';
+import Link from 'next/link';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
 
 // core components
-import GridContainer from "./GridContainer.js";
-import GridItem from "./GridItem.js";
-import Button from "./Button.js";
-import Card from "./Card/Card.js";
-import CardBody from "./Card/CardBody.js";
-import CardFooter from "./Card/CardFooter.js";
+import GridContainer from './GridContainer.js';
+import GridItem from './GridItem.js';
+import Button from './Button.js';
+import Card from './Card/Card.js';
+import CardBody from './Card/CardBody.js';
+import CardFooter from './Card/CardFooter.js';
 
-import styles from "../styles/projectsStyle.js";
+import styles from '../styles/projectsStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -51,9 +52,11 @@ export default function ProjectsSection() {
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
-                <Button round color="primary" className={classes.margin5}>
-                  See live
-                </Button>
+                <Link href="/projects/kukkee-yoga">
+                  <Button round color="primary" className={classes.margin5}>
+                    See Details
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </GridItem>
