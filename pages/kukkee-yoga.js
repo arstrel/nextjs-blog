@@ -1,14 +1,14 @@
 import React from 'react';
-import Layout from '../../components/Layout.js';
-import GoalSection from '../../components/GoalsSection.js';
-import GridContainer from '../../components/GridContainer.js';
-import GridItem from '../../components/GridItem.js';
-import Button from '../../components/Button.js';
+import Layout from '../components/Layout.js';
+import GoalSection from '../components/GoalsSection.js';
+import GridContainer from '../components/GridContainer.js';
+import GridItem from '../components/GridItem.js';
+import Button from '../components/Button.js';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-import callToActionStyle from '../../styles/callToActionStyle.js';
+import callToActionStyle from '../styles/callToActionStyle.js';
 
 const useStyles = makeStyles(callToActionStyle);
 

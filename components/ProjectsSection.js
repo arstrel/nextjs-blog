@@ -52,7 +52,7 @@ export default function ProjectsSection() {
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
-                <Link href="/projects/kukkee-yoga">
+                <Link href="/kukkee-yoga">
                   <Button round color="primary" className={classes.margin5}>
                     See Details
                   </Button>
