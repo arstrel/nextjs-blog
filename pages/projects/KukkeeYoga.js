@@ -1,14 +1,14 @@
 import React from 'react';
-import Layout from '../components/Layout.js';
-import GoalSection from '../components/GoalsSection.js';
-import GridContainer from '../components/GridContainer.js';
-import GridItem from '../components/GridItem.js';
-import Button from '../components/Button.js';
+import Wrapper from '../../components/Wrapper.js';
+import GoalSection from '../../components/GoalsSection.js';
+import GridContainer from '../../components/GridContainer.js';
+import GridItem from '../../components/GridItem.js';
+import Button from '../../components/Button.js';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-import callToActionStyle from '../styles/callToActionStyle.js';
+import callToActionStyle from '../../styles/callToActionStyle.js';
 
 const useStyles = makeStyles(callToActionStyle);
 
@@ -43,13 +43,13 @@ export default function KukkeeYoga() {
     </div>
   );
   return (
-    <Layout
+    <Wrapper
       project={project}
       imageUrl="https://source.unsplash.com/L2wq7Y3h7ag/1600x900"
     >
       <div>
         <GoalSection />
       </div>
-    </Layout>
+    </Wrapper>
   );
 }

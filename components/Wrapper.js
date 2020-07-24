@@ -12,7 +12,7 @@ import stylesGoals from '../styles/goalsStyle.js';
 
 const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
 
-export default function Layout(props) {
+export default function Wrapper(props) {
   const classes = useStyles();
   const { children, small, filter, imageUrl, project, ...rest } = props;
   return (

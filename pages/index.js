@@ -10,7 +10,7 @@ import GridContainer from '../components/GridContainer.js';
 import GridItem from '../components/GridItem.js';
 import GoalsSection from '../components/GoalsSection.js';
 import ProjectsSection from '../components/ProjectsSection.js';
-import Layout from '../components/Layout.js';
+import Wrapper from '../components/Wrapper.js';
 
 import stylesProfile from '../styles/profilePage.js';
 import stylesGoals from '../styles/goalsStyle.js';
@@ -26,7 +26,7 @@ export default function ProfilePage(props) {
     classes.imgFluid
   );
   return (
-    <Layout small>
+    <Wrapper small>
       <div className={classes.container}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={6}>
@@ -89,6 +89,6 @@ export default function ProfilePage(props) {
         <GoalsSection />
         <ProjectsSection />
       </div>
-    </Layout>
+    </Wrapper>
   );
 }
