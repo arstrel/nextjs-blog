@@ -10,7 +10,7 @@ import GridContainer from '../components/GridContainer.js';
 import GridItem from '../components/GridItem.js';
 import GoalsSection from '../components/GoalsSection.js';
 import ProjectsSection from '../components/ProjectsSection.js';
-import Layout from '../components/Layout';
+import Layout from '../components/Layout.js';
 
 import stylesProfile from '../styles/profilePage.js';
 import stylesGoals from '../styles/goalsStyle.js';

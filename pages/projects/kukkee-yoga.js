@@ -1,8 +1,8 @@
-import Layout from '../../components/Layout';
-import GoalSection from '../../components/GoalsSection';
+import Layout from '../../components/Layout.js';
+import GoalSection from '../../components/GoalsSection.js';
 import GridContainer from '../../components/GridContainer.js';
 import GridItem from '../../components/GridItem.js';
-import Button from '../../components/Button';
+import Button from '../../components/Button.js';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
