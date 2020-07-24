@@ -7,8 +7,6 @@ import Button from '../../components/Button.js';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-import stylesProfile from '../../styles/profilePage.js';
-import stylesGoals from '../../styles/goalsStyle.js';
 import callToActionStyle from '../../styles/callToActionStyle.js';
 
 const useStyles = makeStyles(callToActionStyle);
