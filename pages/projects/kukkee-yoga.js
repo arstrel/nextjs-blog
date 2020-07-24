@@ -1,3 +1,4 @@
+import React from 'react';
 import Layout from '../../components/Layout.js';
 import GoalSection from '../../components/GoalsSection.js';
 import GridContainer from '../../components/GridContainer.js';
