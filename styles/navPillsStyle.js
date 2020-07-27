@@ -64,10 +64,10 @@ const navPillsStyle = theme => ({
     }
   },
   horizontalPills: {
-    width: "100%",
+    width: "97%",
     float: "none !important",
     "& + button": {
-      margin: "10px 0"
+      margin: "10px 5px"
     }
   },
   contentWrapper: {
@@ -135,6 +135,10 @@ const navPillsStyle = theme => ({
     "&,& *": {
       letterSpacing: "normal"
     }
+  },
+  tabContent: {
+    width: '95%',
+    paddingLeft: '10px'
   }
 });
 

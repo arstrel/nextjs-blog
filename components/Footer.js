@@ -1,15 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import Link from "next/link";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import Link from 'next/link';
 // material-ui core components
-import { List, ListItem } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { List, ListItem } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
-import styles from "../styles/footerStyle.js";
+import styles from '../styles/footerStyle.js';
 
 const useStyles = makeStyles(styles);
 
@@ -30,23 +30,14 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <Link href="/portfolio">
-                <a className={`${classes.block} ${classes.disabledLink}`}>
-                  Portfolio
-                </a>
-              </Link>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <Link href="/blog">
-                <a className={`${classes.block} ${classes.disabledLink}`}>
-                  Blog
-                </a>
-              </Link>
+              <p className={`${classes.block} ${classes.disabledLink}`}>
+                © 2020
+              </p>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          <MailOutlineIcon className={classes.icon} />{" "}
+          <MailOutlineIcon className={classes.icon} />{' '}
           <a href="mailto:me@artemio.tech" className={aClasses} target="_blank">
             me@artemio.tech
           </a>

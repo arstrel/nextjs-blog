@@ -1,4 +1,3 @@
-import React from 'react';
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 // @material-ui/core components
@@ -25,6 +24,7 @@ export default function ProfilePage(props) {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+
   return (
     <Wrapper small>
       <div className={classes.container}>

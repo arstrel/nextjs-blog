@@ -41,7 +41,7 @@ export default function ProjectsSection() {
                 />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Kukee-blis Yoga
+                Kukee-bliss Yoga
                 <br />
                 <small className={classes.smallTitle}>Small yoga studio</small>
               </h4>

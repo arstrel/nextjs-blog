@@ -1,26 +1,24 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Tooltip from '@material-ui/core/Tooltip';
+import Hidden from '@material-ui/core/Hidden';
 
-// @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import Button from './Button';
 
-import Button from "./Button";
-
-import styles from "../styles/headerLinksStyle.js";
+import styles from '../styles/headerLinksStyle.js';
 
 const useStyles = makeStyles(styles);
 
 export default function HeaderLinks() {
   const classes = useStyles();
-  let position = "top";
-  if (typeof window !== "undefined") {
-    position = window.innerWidth > 959 ? "top" : "left";
+  let position = 'top';
+  if (typeof window !== 'undefined') {
+    position = window.innerWidth > 959 ? 'top' : 'left';
   }
   return (
     <List className={classes.list}>
@@ -37,7 +35,8 @@ export default function HeaderLinks() {
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-linkedin"} />
+            <i className={classes.socialIcons + ' fab fa-linkedin'} />
+            <Hidden mdUp> LinkedIn</Hidden>
           </Button>
         </Tooltip>
       </ListItem>
@@ -54,7 +53,8 @@ export default function HeaderLinks() {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-medium"} />
+            <i className={classes.socialIcons + ' fab fa-medium'} />
+            <Hidden mdUp> Medium</Hidden>
           </Button>
         </Tooltip>
       </ListItem>
@@ -71,7 +71,8 @@ export default function HeaderLinks() {
             target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-github"} />
+            <i className={classes.socialIcons + ' fab fa-github'} />
+            <Hidden mdUp> Github</Hidden>
           </Button>
         </Tooltip>
       </ListItem>
