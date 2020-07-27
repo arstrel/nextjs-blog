@@ -6,7 +6,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-import styles from "../styles/infoStyle.js";
+import styles from "../styles/infoStyle";
 
 const useStyles = makeStyles(styles);
 
@@ -40,6 +40,7 @@ InfoArea.defaultProps = {
 };
 
 InfoArea.propTypes = {
+  // eslint-disable-next-line react/no-unused-prop-types
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

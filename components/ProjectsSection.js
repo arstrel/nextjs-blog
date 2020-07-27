@@ -8,14 +8,14 @@ import { makeStyles } from '@material-ui/core/styles';
 // @material-ui/icons
 
 // core components
-import GridContainer from './GridContainer.js';
-import GridItem from './GridItem.js';
-import Button from './Button.js';
-import Card from './Card/Card.js';
-import CardBody from './Card/CardBody.js';
-import CardFooter from './Card/CardFooter.js';
+import GridContainer from './GridContainer';
+import GridItem from './GridItem';
+import Button from './Button';
+import Card from './Card/Card';
+import CardBody from './Card/CardBody';
+import CardFooter from './Card/CardFooter';
 
-import styles from '../styles/projectsStyle.js';
+import styles from '../styles/projectsStyle';
 
 const useStyles = makeStyles(styles);
 

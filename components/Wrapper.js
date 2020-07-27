@@ -1,14 +1,14 @@
-import Header from './Header.js';
-import Parallax from './Parallax.js';
-import Footer from './Footer.js';
-import HeaderLinks from './HeaderLinks.js';
+import Header from './Header';
+import Parallax from './Parallax';
+import Footer from './Footer';
+import HeaderLinks from './HeaderLinks';
 import classNames from 'classnames';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-import stylesProfile from '../styles/profilePage.js';
-import stylesGoals from '../styles/goalsStyle.js';
+import stylesProfile from '../styles/profilePage';
+import stylesGoals from '../styles/goalsStyle';
 
 const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
 

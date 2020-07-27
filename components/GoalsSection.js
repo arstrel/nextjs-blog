@@ -7,13 +7,13 @@ import GroupWork from '@material-ui/icons/GroupWork';
 import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Fingerprint from '@material-ui/icons/Fingerprint';
 // core components
-import GridContainer from './GridContainer.js';
-import GridItem from './GridItem.js';
-import InfoArea from './InfoArea.js';
+import GridContainer from './GridContainer';
+import GridItem from './GridItem';
+import InfoArea from './InfoArea';
 import { skillset } from '../lib/constants';
 
-import stylesProfile from '../styles/profilePage.js';
-import stylesGoals from '../styles/goalsStyle.js';
+import stylesProfile from '../styles/profilePage';
+import stylesGoals from '../styles/goalsStyle';
 
 const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
 
@@ -28,8 +28,8 @@ export default function GoalsSection() {
             <div className={classes.section}>
               I have experience in using the following technologies:
               <GridContainer className={classes.techItemsContainer}>
-                {skillset.map((el, i) => (
-                  <GridItem key={i} className={classes.techListItem}>
+                {skillset.map((el) => (
+                  <GridItem key={el} className={classes.techListItem}>
                     {el}
                   </GridItem>
                 ))}

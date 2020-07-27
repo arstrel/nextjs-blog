@@ -23,11 +23,6 @@
     "no-use-before-define": 0,
     "react/forbid-prop-types": 0,
     "import/order": 0,
-    "no-restricted-imports": [
-      "error",
-      {
-        "patterns": ["@material-ui/*/*/*", "!@material-ui/core/test-utils/*"]
-      }
-    ]
+    "react/require-default-props": 0
   }
 }

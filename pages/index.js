@@ -4,21 +4,20 @@ import classNames from 'classnames';
 import { makeStyles } from '@material-ui/core/styles';
 
 // core components
-import Button from '../components/Button.js';
-import GridContainer from '../components/GridContainer.js';
-import GridItem from '../components/GridItem.js';
-import GoalsSection from '../components/GoalsSection.js';
-import ProjectsSection from '../components/ProjectsSection.js';
-import Wrapper from '../components/Wrapper.js';
+import Button from '../components/Button';
+import GridContainer from '../components/GridContainer';
+import GridItem from '../components/GridItem';
+import GoalsSection from '../components/GoalsSection';
+import ProjectsSection from '../components/ProjectsSection';
+import Wrapper from '../components/Wrapper';
 
-import stylesProfile from '../styles/profilePage.js';
-import stylesGoals from '../styles/goalsStyle.js';
+import stylesProfile from '../styles/profilePage';
+import stylesGoals from '../styles/goalsStyle';
 
 const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
 
-export default function ProfilePage(props) {
+export default function ProfilePage() {
   const classes = useStyles();
-  const { ...rest } = props;
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
@@ -48,7 +47,7 @@ export default function ProfilePage(props) {
                   href="https://www.twitter.com/arstrel/"
                   target="_blank"
                 >
-                  <i className={'fab fa-twitter'} />
+                  <i className="fab fa-twitter" />
                 </Button>
                 <Button
                   justIcon
@@ -57,7 +56,7 @@ export default function ProfilePage(props) {
                   href="https://www.instagram.com/timberto/"
                   target="_blank"
                 >
-                  <i className={'fab fa-instagram'} />
+                  <i className="fab fa-instagram" />
                 </Button>
                 <Button
                   justIcon
@@ -66,7 +65,7 @@ export default function ProfilePage(props) {
                   href="https://www.facebook.com/arstrels"
                   target="_blank"
                 >
-                  <i className={'fab fa-facebook'} />
+                  <i className="fab fa-facebook" />
                 </Button>
               </div>
             </div>

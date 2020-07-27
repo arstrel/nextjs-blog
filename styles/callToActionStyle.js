@@ -1,6 +1,4 @@
-import { container, title } from './material-kit-react.js';
-
-import imagesStyle from './imagesStyles';
+import { container, title } from './material-kit-react';
 
 const callToActionStyle = {
   container,

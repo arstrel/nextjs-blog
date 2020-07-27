@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Link from 'next/link';
 // material-ui core components
 import { List, ListItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // @material-ui/icons
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
-import styles from '../styles/footerStyle.js';
+import styles from '../styles/footerStyle';
 
 const useStyles = makeStyles(styles);
 
@@ -38,7 +37,7 @@ export default function Footer(props) {
         </div>
         <div className={classes.right}>
           <MailOutlineIcon className={classes.icon} />{' '}
-          <a href="mailto:me@artemio.tech" className={aClasses} target="_blank">
+          <a href="mailto:me@artemio.tech" className={aClasses} target="_blank" rel="noreferrer">
             me@artemio.tech
           </a>
         </div>

@@ -1,8 +1,8 @@
-import Wrapper from '../../components/Wrapper.js';
-import GridContainer from '../../components/GridContainer.js';
-import GridItem from '../../components/GridItem.js';
-import Button from '../../components/Button.js';
-import NavPills from '../../components/NavPills.js';
+import Wrapper from '../../components/Wrapper';
+import GridContainer from '../../components/GridContainer';
+import GridItem from '../../components/GridItem';
+import Button from '../../components/Button';
+import NavPills from '../../components/NavPills';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,14 +12,13 @@ import Computer from '@material-ui/icons/Computer';
 import DynamicFeed from '@material-ui/icons/DynamicFeed';
 import MenuBook from '@material-ui/icons/MenuBook';
 
-import callToActionStyle from '../../styles/callToActionStyle.js';
-import stylesProfile from '../../styles/profilePage.js';
+import callToActionStyle from '../../styles/callToActionStyle';
+import stylesProfile from '../../styles/profilePage';
 
 const useStyles = makeStyles({ ...stylesProfile, ...callToActionStyle });
 
 export default function KukkeeYoga() {
   const classes = useStyles();
-
   const project = (
     <div className={classes.container}>
       <GridContainer>
