@@ -47,8 +47,10 @@ export default function ProjectsSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Some details about this project. Who is it for and what is up.
-                  Some details about this project. Who is it for and what is up.
+                  Straight out of the Ironhack coding bootcamp, this project
+                  leverages the power of MERN stack to enable South Carolina
+                  yoga studio to better serve their students with unique daily
+                  routine builder.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
