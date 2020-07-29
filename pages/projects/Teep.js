@@ -31,10 +31,10 @@ export default function Teep() {
           <h1 className={classes.title}>Teep 100%</h1>
           <h4 className={classes.smallDescription}>
             Teep is made for food and beverage industry workers. Servers,
-            waitresses and bartenders work in a fast-paced environment without a
-            minute break for hours and then typically spent 15-25 minutes doing
-            numerous operations to calculate their shift closing paperwork. This
-            process is streamlined with Teep.
+            waitresses, and bartenders work in a fast-paced environment without
+            a minute break for hours and then typically spend 15-25 minutes
+            doing numerous operations to calculate their shift closing
+            paperwork. This process is streamlined with Teep.
           </h4>
           <br />
           <Button
@@ -70,25 +70,25 @@ export default function Teep() {
                 <GridItem>
                   Teep is a way for food and beverage workers to calculate tips
                   and track their earnings in one place. Teep can be used
-                  without login for a quick calculation or with it to save the
-                  calculation for future reference.
+                  without login for a quick calculation or with login to save
+                  the calculation for future reference.
                 </GridItem>
                 <GridItem>
                   <p>
                     Teep is a versatile tool that can be configured for
-                    different restaurant or bar setting. <br />
+                    different restaurant or bar settings. <br />
                     It supports:
                   </p>
                 </GridItem>
                 <GridItem component="ul">
-                  <li>Tipout for bartenders or/and foodrunners</li>
-                  <li>Various event tip percentage</li>
+                  <li>Tipout for bartenders and/or foodrunners</li>
+                  <li>Various event tip percentages</li>
                   <li>
                     Automatic split between selected number of team members
                   </li>
                   <li>
-                    Authentication system has two levels for employees and
-                    managers.
+                    Authentication system with two levels: for employees and for
+                    managers
                   </li>
                 </GridItem>
                 <GridItem>
@@ -141,7 +141,7 @@ export default function Teep() {
                   <li>Image handling with Cloudinary</li>
                   <li>MongoDB to store data</li>
                   <li>
-                    Passport.js to handge authentification and authorization
+                    Passport.js to handle authentication and authorization
                   </li>
                 </GridItem>
                 <GridItem>

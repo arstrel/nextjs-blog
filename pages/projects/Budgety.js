@@ -29,7 +29,7 @@ export default function Budgety() {
           <h1 className={classes.title}>Budgety</h1>
           <h4 className={classes.smallDescription}>
             Small vanilla JavaScript project to showcase MVC Pattern. With the
-            use of IIFE it separates Budget calculating logic, UI and the app
+            use of IIFE, it separates Budget calculating logic, UI, and the app
             itself.
           </h4>
           <br />

@@ -81,9 +81,9 @@ export default function ProjectsSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  When the lunch time is upon us, the office starts to discuss
+                  When lunch time is upon us, the office starts to discuss
                   where to go for lunch. Explore or exploit? Go to the place
-                  everyone knows and enjoys or check out this newly opened
+                  everyone knows and enjoys, or check out this newly opened
                   place? Put it to a vote!
                 </p>
               </CardBody>

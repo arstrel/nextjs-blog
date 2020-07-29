@@ -25,10 +25,10 @@ export default function KukkeeYoga() {
         <GridItem xs={12} sm={12} md={6} className={classes.actionContainer}>
           <h1 className={classes.title}>Kukee-bliss yoga studio</h1>
           <h4 className={classes.smallDescription}>
-            A yoga studio in South Carolina had just a facebook page for web
+            A yoga studio in South Carolina had only a facebook page for web
             presence and a big dream of making yoga classes affordable and
             available for the local community. The owner wanted a way to create
-            custom daily routines fot students of different age and levels...
+            custom daily routines for students of different ages and levels...
           </h4>
           <br />
           <Button
@@ -76,7 +76,7 @@ export default function KukkeeYoga() {
                   <li>
                     <i>FAQs: </i>
                     only available if logged in as an admin. Allows to
-                    add/delete/edit Q and A's right from the page.
+                    add/delete/edit Q and A's directly from the page.
                   </li>
                   <li>
                     <i>Gallery: </i>
@@ -85,11 +85,11 @@ export default function KukkeeYoga() {
                   </li>
                   <li>
                     <i>Class packages: </i>
-                    the users may express interest to purchase class packages
-                    and the admin will see this in the admin's zone together
+                    the users may express interest in purchasing class packages
+                    and the admin will see this in the admin's zone, together
                     with user's email.
                   </li>
-                  <li>Daily routines sequence builder.</li>
+                  <li>Daily routine sequence builder.</li>
                 </GridItem>
                 <GridItem>
                   <p>
@@ -140,7 +140,7 @@ export default function KukkeeYoga() {
                   <li>Image handling with Cloudinary</li>
                   <li>MongoDB to store data</li>
                   <li>
-                    Passport.js to handge authentification and authorization
+                    Passport.js to handle authentication and authorization
                   </li>
                 </GridItem>
                 <GridItem>
@@ -157,10 +157,10 @@ export default function KukkeeYoga() {
                 <GridItem>
                   This website was created in collaboration with the actual
                   working business. As such, it was important to have future
-                  developers in mind and document everything thoroughly.
+                  developers in mind and to document everything thoroughly.
                 </GridItem>
                 <GridItem>
-                  The website's structure and every REST API endpoint was
+                  The website's structure and every REST API endpoint were
                   documented with examples of request parameters and response
                   shape.
                 </GridItem>

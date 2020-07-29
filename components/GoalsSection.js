@@ -44,7 +44,7 @@ export default function GoalsSection() {
             <InfoArea
               title="My values"
               description="Working on a project, I aim to write working and testable code, in allocated time and following the accepted best practices.
-              I pay attention to the project structure that will enable easy maintenance and implementing future enhancements. 
+              I pay attention to the project structure that will enable easy maintenance and future enhancements implemention. 
               I am a team player, I value team collaboration and clarity of communication."
               icon={TrackChanges}
               iconColor="primary"
@@ -64,9 +64,9 @@ export default function GoalsSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Scalable and Secure"
-              description="There are a lot of moving parts in any organization. When all the pieces fall in the right places, 
+              description="There are many moving parts in any organization. When all the pieces fall in the right places, 
               I want to be sure that my code won't be a bottleneck to hold the progress. I invest time and effort to continuously improve my knowledge and skills 
-              to build scalable and secure solutions to give piece of mind to users and organizations."
+              to build scalable and secure solutions that give piece of mind to users and organizations."
               icon={Fingerprint}
               iconColor="danger"
               vertical
@@ -77,4 +77,3 @@ export default function GoalsSection() {
     </div>
   );
 }
-

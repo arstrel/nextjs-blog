@@ -31,9 +31,9 @@ export default function LunchVoter() {
           <h1 className={classes.title}>Lunch Voter</h1>
           <h4 className={classes.smallDescription}>
             Leveraging the power of graphQL subscriptions to solve a classic
-            office battle over the place to go for lunch! Which one of the newly
-            opened places would you like to explore with your coleagues today?
-            Put it to a vote!
+            office battle: where to go for lunch! Which one of the newly opened
+            places would you like to explore with your colleagues today? Put it
+            to a vote!
           </h4>
           <br />
           <Button
@@ -74,18 +74,18 @@ export default function LunchVoter() {
                     storage, but there is a powerful technology behind it.
                   </span>
                   <p>
-                    This little voter is powered by GraphQL subscriptions which
-                    makes it show updates in real-time! The time is of the
-                    essence and the UI is as simple as possible here.
+                    This little voter is powered by GraphQL subscriptions, which
+                    shows updates in real-time! The time is of the essence and
+                    the UI is as simple as possible here.
                   </p>
                   <p>
-                    Go - vote or add your own option - see the changes reflected
-                    instantly.
+                    Navigate to lunch voter - add your own option or cast your
+                    vote - see the changes reflected instantly.
                   </p>
                   <p>
-                    The fun fact is that because of the instant updates the
+                    The fun fact is that, because of the instant updates the
                     voting process becomes competitive very quickly. Your office
-                    buddies can upvote their choice of downvote yours as many
+                    buddies can upvote their choice or downvote yours as many
                     times as they like. The most persistent wins!
                   </p>
                 </GridItem>
@@ -110,10 +110,10 @@ export default function LunchVoter() {
                   </p>
                   <p>
                     Material UI may not seem as user-friendly as some other
-                    component collections out there. It requires to compose
+                    component collections out there. It requires composing the
                     functionality you need out of more granular building blocks.
                     But it all pays out when you need to build something more
-                    custom.
+                    customized.
                   </p>
                 </GridItem>
               </GridContainer>
@@ -129,14 +129,14 @@ export default function LunchVoter() {
                   <p>
                     With the help of
                     <a href="https://www.apollographql.com/"> Apollo </a>
-                    Graph QL platform and subscriptions based on websockets,
+                    GraphQL platform and subscriptions based on websockets,
                     lunch voter can maintain a continuous connection to the
                     server and "subscribe" to the event of adding new venue or
                     to the event of votes casted.
                   </p>
                   <p>
                     When such events occur, the server notifies the client and
-                    update it with the fresh data. The UI then updates with it
+                    updates it with the fresh data. The UI then updates
                     seamlessly and in real-time.
                   </p>
                 </GridItem>
@@ -158,9 +158,9 @@ export default function LunchVoter() {
             tabContent: (
               <GridContainer justify="center">
                 <GridItem>
-                  For a free teer deployements Heroku winds down the app after
-                  certain time of inactivity. The lunch voter here doe not use
-                  any data persistence which means the votes get wiped out after
+                  For free teer deployments, Heroku winds down the app after a
+                  certain period of inactivity. The lunch voter here does not use
+                  any data persistence, which means the votes get wiped out after
                   a while automatically! This is perfect for our little use
                   case. After the team leaves for lunch, the voter is ready for
                   the next use.
