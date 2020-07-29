@@ -17,7 +17,7 @@ import stylesProfile from '../../styles/profilePage';
 
 const useStyles = makeStyles({ ...stylesProfile, ...callToActionStyle });
 
-export default function KukkeeYoga() {
+export default function Teep() {
   const classes = useStyles();
   const project = (
     <div className={classes.container}>

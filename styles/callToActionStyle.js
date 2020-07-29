@@ -19,7 +19,7 @@ const callToActionStyle = {
     backgroundColor: 'rgba(220, 240, 220, 0.5)',
     borderRadius: '5px',
   },
-  actionContainerBudgety: {
+  actionContainerWhite: {
     backgroundColor: 'rgba(220, 220, 220, 0.5)',
     borderRadius: '5px',
   },

@@ -31,6 +31,7 @@ export default function ProjectsSection() {
       <h2 className={classes.title}>Some of my projects</h2>
       <div>
         <GridContainer>
+          
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -61,6 +62,41 @@ export default function ProjectsSection() {
               </CardFooter>
             </Card>
           </GridItem>
+
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
+                  src="/images/lunchVoter.jpeg"
+                  alt="..."
+                  className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Lunch Voter
+                <br />
+                <small className={classes.smallTitle}>
+                  Choose lunch place as a team
+                </small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  When the lunch time is upon us, the office starts to discuss
+                  where to go for lunch. Explore or exploit? Go to the place
+                  everyone knows and enjoys or check out this newly opened
+                  place? Put it to a vote!
+                </p>
+              </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+                <Link href="/projects/LunchVoter">
+                  <Button round color="primary" className={classes.margin5}>
+                    See Details
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+          </GridItem>
+
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -90,6 +126,7 @@ export default function ProjectsSection() {
               </CardFooter>
             </Card>
           </GridItem>
+
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -118,6 +155,7 @@ export default function ProjectsSection() {
               </CardFooter>
             </Card>
           </GridItem>
+
         </GridContainer>
       </div>
     </div>

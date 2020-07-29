@@ -15,7 +15,7 @@ import stylesProfile from '../../styles/profilePage';
 
 const useStyles = makeStyles({ ...stylesProfile, ...callToActionStyle });
 
-export default function KukkeeYoga() {
+export default function Budgety() {
   const classes = useStyles();
   const project = (
     <div className={classes.container}>
@@ -24,7 +24,7 @@ export default function KukkeeYoga() {
           xs={12}
           sm={12}
           md={6}
-          className={classes.actionContainerBudgety}
+          className={classes.actionContainerWhite}
         >
           <h1 className={classes.title}>Budgety</h1>
           <h4 className={classes.smallDescription}>
