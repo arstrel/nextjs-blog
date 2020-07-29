@@ -49,8 +49,7 @@ export default function ProjectsSection() {
                 <p className={classes.description}>
                   Straight out of the Ironhack coding bootcamp, this project
                   leverages the power of MERN stack to enable South Carolina
-                  yoga studio to better serve their students with unique daily
-                  routine builder.
+                  yoga studio to better serve their students.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -76,14 +75,18 @@ export default function ProjectsSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Some details about this project. Who is it for and what is up.
-                  Some details about this project. Who is it for and what is up.
+                  After a long fast-paced shift in a restaurant or a bar, food
+                  and beverage employees gather to calculate closing shift
+                  paperwork. Teep 100% is the way to streamline this process and
+                  track earnings in one place.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
-                <Button round color="primary" className={classes.margin5}>
-                  See live
-                </Button>
+                <Link href="/projects/Teep">
+                  <Button round color="primary" className={classes.margin5}>
+                    See Details
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </GridItem>
@@ -93,20 +96,25 @@ export default function ProjectsSection() {
                 <img src="/images/fun.jpg" alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                You got more projects, right?
+                Budgety
                 <br />
-                <small className={classes.smallTitle}>Yeah, for sure</small>
+                <small className={classes.smallTitle}>
+                  Simple way to do your budget
+                </small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Some details about this project. Who is it for and what is up.
-                  Some details about this project. Who is it for and what is up.
+                  A small project with a mighty architecture. This pure vanilla
+                  JavaScript project is built using MVC pattern and separation
+                  of concerns for Budget, App and UI logic.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
-                <Button round color="primary" className={classes.margin5}>
-                  See live
-                </Button>
+                <Link href="/projects/Budgety">
+                  <Button round color="primary" className={classes.margin5}>
+                    See Details
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </GridItem>

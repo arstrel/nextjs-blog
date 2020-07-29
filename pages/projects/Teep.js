@@ -22,19 +22,25 @@ export default function KukkeeYoga() {
   const project = (
     <div className={classes.container}>
       <GridContainer>
-        <GridItem xs={12} sm={12} md={6} className={classes.actionContainer}>
-          <h1 className={classes.title}>Kukee-bliss yoga studio</h1>
+        <GridItem
+          xs={12}
+          sm={12}
+          md={6}
+          className={classes.actionContainerTeep}
+        >
+          <h1 className={classes.title}>Teep 100%</h1>
           <h4 className={classes.smallDescription}>
-            A yoga studio in South Carolina had just a facebook page for web
-            presence and a big dream of making yoga classes affordable and
-            available for the local community. The owner wanted a way to create
-            custom daily routines fot students of different age and levels...
+            Teep is made for food and beverage industry workers. Servers,
+            waitresses and bartenders work in a fast-paced environment without a
+            minute break for hours and then typically spent 15-25 minutes doing
+            numerous operations to calculate their shift closing paperwork. This
+            process is streamlined with Teep.
           </h4>
           <br />
           <Button
             color="danger"
             size="lg"
-            href="https://kukee-bliss.herokuapp.com/"
+            href="https://teep-app.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,7 +52,7 @@ export default function KukkeeYoga() {
     </div>
   );
   return (
-    <Wrapper project={project} imageUrl="/images/china.jpg">
+    <Wrapper project={project} imageUrl="/images/restaurant.jpeg">
       <NavPills
         alignCenter
         active={0}
@@ -62,34 +68,28 @@ export default function KukkeeYoga() {
             tabContent: (
               <GridContainer justify="center">
                 <GridItem>
-                  Features two levels of user rights: admin and user. There is a
-                  custom daily yoga routine builder in the admin's zone that
-                  allows to create and assign the routines to individual users
-                  or to the entire group!
+                  Teep is a way for food and beverage workers to calculate tips
+                  and track their earnings in one place. Teep can be used
+                  without login for a quick calculation or with it to save the
+                  calculation for future reference.
+                </GridItem>
+                <GridItem>
+                  <p>
+                    Teep is a versatile tool that can be configured for
+                    different restaurant or bar setting. <br />
+                    It supports:
+                  </p>
                 </GridItem>
                 <GridItem component="ul">
-                  <strong>Dynamic elements include:</strong>
+                  <li>Tipout for bartenders or/and foodrunners</li>
+                  <li>Various event tip percentage</li>
                   <li>
-                    <i>Quotes: </i>
-                    rotate from predefined list at every home page load.
+                    Automatic split between selected number of team members
                   </li>
                   <li>
-                    <i>FAQs: </i>
-                    only available if logged in as an admin. Allows to
-                    add/delete/edit Q and A's right from the page.
+                    Authentication system has two levels for employees and
+                    managers.
                   </li>
-                  <li>
-                    <i>Gallery: </i>
-                    allows to add/remove/edit pictures or youtube videos. Made
-                    with Cloudinary.
-                  </li>
-                  <li>
-                    <i>Class packages: </i>
-                    the users may express interest to purchase class packages
-                    and the admin will see this in the admin's zone together
-                    with user's email.
-                  </li>
-                  <li>Daily routines sequence builder.</li>
                 </GridItem>
                 <GridItem>
                   <p>
@@ -97,10 +97,10 @@ export default function KukkeeYoga() {
                   </p>
                   <p>
                     <strong>Login: </strong>
-                    admin@admin.com
+                    cool@cool.com
                     <br />
                     <strong>Password: </strong>
-                    admin
+                    cool
                   </p>
                 </GridItem>
               </GridContainer>
@@ -111,15 +111,17 @@ export default function KukkeeYoga() {
             tabIcon: Storefront,
             tabContent: (
               <GridContainer justify="center">
-                <GridItem>Powered by React.js</GridItem>
-                <GridItem className={classes.videoContainer}>
-                  <video width="80%" controls autoPlay>
-                    <source
-                      src="https://s3.amazonaws.com/media-p.slid.es/videos/1110040/VMcJYn9w/kukee-demo-sped-up.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
+                <GridItem>
+                  <p>
+                    The project is powered by HTML/CSS and
+                    <a href="https://handlebarsjs.com/"> Handlebars.js </a>
+                    templating engine.
+                  </p>
+                </GridItem>
+                <GridItem>
+                  Styles are made with
+                  <a href="https://materializecss.com/"> Materialize</a> CSS
+                  Library.
                 </GridItem>
               </GridContainer>
             ),
@@ -136,7 +138,6 @@ export default function KukkeeYoga() {
                   </p>
                 </GridItem>
                 <GridItem component="ul">
-                  <li>Welcome and password reset emails with Nodemailer</li>
                   <li>Image handling with Cloudinary</li>
                   <li>MongoDB to store data</li>
                   <li>
@@ -150,34 +151,18 @@ export default function KukkeeYoga() {
             ),
           },
           {
-            tabButton: 'Docs',
+            tabButton: 'Other',
             tabIcon: MenuBook,
             tabContent: (
               <GridContainer justify="center">
                 <GridItem>
-                  This website was created in collaboration with the actual
-                  working business. As such, it was important to have future
-                  developers in mind and document everything thoroughly.
+                  Quick and simple, this project was made with just HTML/CSS and
+                  <a href="https://www.npmjs.com/package/hbs"> Handlebars </a>
                 </GridItem>
-                <GridItem>
-                  The website's structure and every REST API endpoint was
-                  documented with examples of request parameters and response
-                  shape.
-                </GridItem>
-                <GridItem>Check out full docs in:</GridItem>
-                <GridItem>
-                  <ul>
-                    <li>
-                      <a href="https://mind42.com/mindmap/cbb3de54-0e78-43d8-b5fa-6b465066e96f?rel=pmb">
-                        Text Form
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/yoga-app/kukee-bliss">
-                        Mindmap form
-                      </a>
-                    </li>
-                  </ul>
+                <GridItem component="p">
+                  <a href="https://github.com/arstrel/project-2">
+                    See on GitHub
+                  </a>
                 </GridItem>
               </GridContainer>
             ),

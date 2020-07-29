@@ -15,6 +15,14 @@ const callToActionStyle = {
     backgroundColor: 'rgba(250, 210, 180, 0.5)',
     borderRadius: '5px',
   },
+  actionContainerTeep: {
+    backgroundColor: 'rgba(220, 240, 220, 0.5)',
+    borderRadius: '5px',
+  },
+  actionContainerBudgety: {
+    backgroundColor: 'rgba(220, 220, 220, 0.5)',
+    borderRadius: '5px',
+  },
   '@media (max-width: 576px)': {
     smallDescription: {
       margin: 0,

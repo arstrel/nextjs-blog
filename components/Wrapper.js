@@ -23,7 +23,7 @@ export default function Wrapper(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: project ? 350 : 200,
+          height: project ? 250 : 200,
           color: 'white',
         }}
         {...rest}
