@@ -1,21 +1,21 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import classNames from "classnames";
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 
 // core components
-import GridContainer from './GridContainer';
-import GridItem from './GridItem';
-import Button from './Button';
-import Card from './Card/Card';
-import CardBody from './Card/CardBody';
-import CardFooter from './Card/CardFooter';
+import GridContainer from "./GridContainer";
+import GridItem from "./GridItem";
+import Button from "./Button";
+import Card from "./Card/Card";
+import CardBody from "./Card/CardBody";
+import CardFooter from "./Card/CardFooter";
 
-import styles from '../styles/projectsStyle';
+import styles from "../styles/projectsStyle";
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +31,6 @@ export default function ProjectsSection() {
       <h2 className={classes.title}>Some of my projects</h2>
       <div>
         <GridContainer>
-          
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
@@ -44,7 +43,9 @@ export default function ProjectsSection() {
               <h4 className={classes.cardTitle}>
                 Kukee-bliss Yoga
                 <br />
-                <small className={classes.smallTitle}>Small yoga studio</small>
+                <small className={classes.smallTitle}>
+                  React, Express, Node, MongoDB, REST API
+                </small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
@@ -67,6 +68,40 @@ export default function ProjectsSection() {
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img
+                  src="/images/recipe-avatar.jpeg"
+                  alt="..."
+                  className={imageClasses}
+                />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Recipes with Forkify
+                <br />
+                <small className={classes.smallTitle}>
+                  ES6 JavaScript, Webpack, Babel, MVC Pattern
+                </small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  This recipe project uses 3rd party API to search recipes from
+                  different sources. Features servings calculation, and
+                  maintains likes list in local storage. Done completely in ES6
+                  JavaScript with the use of webpack and babel.
+                </p>
+              </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+                <Link href="/projects/RecipesForkify">
+                  <Button round color="primary" className={classes.margin5}>
+                    See Details
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+          </GridItem>
+
+          <GridItem xs={12} sm={12} md={4}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img
                   src="/images/lunchVoter.jpeg"
                   alt="..."
                   className={imageClasses}
@@ -76,15 +111,15 @@ export default function ProjectsSection() {
                 Lunch Voter
                 <br />
                 <small className={classes.smallTitle}>
-                  Choose lunch place as a team
+                  React, Node, GraphQL API, Real-time subscriptions
                 </small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  When lunch time is upon us, the office starts to discuss
-                  where to go for lunch. Explore or exploit? Go to the place
-                  everyone knows and enjoys, or check out this newly opened
-                  place? Put it to a vote!
+                  When lunch time is upon us, the office starts to discuss where
+                  to go for lunch. Explore or exploit? Go to the place everyone
+                  knows and enjoys, or check out this newly opened place? Put it
+                  to a vote!
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -106,7 +141,7 @@ export default function ProjectsSection() {
                 Teep 100%
                 <br />
                 <small className={classes.smallTitle}>
-                  Bar Tips Calculator
+                  JavaScript, Materialize, Handlebars, Node, MongoDB
                 </small>
               </h4>
               <CardBody>
@@ -136,7 +171,7 @@ export default function ProjectsSection() {
                 Budgety
                 <br />
                 <small className={classes.smallTitle}>
-                  Simple way to do your budget
+                  Vanilla JavaScript, MVC Pattern with the use of IIFE
                 </small>
               </h4>
               <CardBody>
@@ -155,7 +190,6 @@ export default function ProjectsSection() {
               </CardFooter>
             </Card>
           </GridItem>
-
         </GridContainer>
       </div>
     </div>
