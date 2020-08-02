@@ -1,19 +1,18 @@
-import Wrapper from '../../components/Wrapper';
-import GridContainer from '../../components/GridContainer';
-import GridItem from '../../components/GridItem';
-import Button from '../../components/Button';
-import NavPills from '../../components/NavPills';
+import Wrapper from "../../components/Wrapper";
+import GridContainer from "../../components/GridContainer";
+import GridItem from "../../components/GridItem";
+import Button from "../../components/Button";
+import NavPills from "../../components/NavPills";
 
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Computer from '@material-ui/icons/Computer';
-import MenuBook from '@material-ui/icons/MenuBook';
+import Computer from "@material-ui/icons/Computer";
+import MenuBook from "@material-ui/icons/MenuBook";
 
-import callToActionStyle from '../../styles/callToActionStyle';
-import stylesProfile from '../../styles/profilePage';
+import callToActionStyle from "../../styles/callToActionStyle";
 
-const useStyles = makeStyles({ ...stylesProfile, ...callToActionStyle });
+const useStyles = makeStyles(callToActionStyle);
 
 export default function Budgety() {
   const classes = useStyles();
@@ -59,7 +58,7 @@ export default function Budgety() {
         color="primary"
         tabs={[
           {
-            tabButton: 'MVC Pattern',
+            tabButton: "MVC Pattern",
             tabIcon: Computer,
             tabContent: (
               <GridContainer justify="center">
@@ -74,7 +73,7 @@ export default function Budgety() {
             ),
           },
           {
-            tabButton: 'Lessons learned',
+            tabButton: "Lessons learned",
             tabIcon: MenuBook,
             tabContent: (
               <GridContainer justify="center">

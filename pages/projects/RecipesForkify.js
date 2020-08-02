@@ -12,9 +12,8 @@ import DynamicFeed from "@material-ui/icons/DynamicFeed";
 import MenuBook from "@material-ui/icons/MenuBook";
 
 import callToActionStyle from "../../styles/callToActionStyle";
-import stylesProfile from "../../styles/profilePage";
 
-const useStyles = makeStyles({ ...stylesProfile, ...callToActionStyle });
+const useStyles = makeStyles(callToActionStyle);
 
 export default function RecipesForkify() {
   const classes = useStyles();
@@ -63,14 +62,14 @@ export default function RecipesForkify() {
                 <GridItem>
                   When it comes to creating a website that needs to:
                   <ul>
-                    <li>fetch the data from 3rd party API</li>
+                    <li>fetch the data from third party API</li>
                     <li>maintain multiple pieces of internal state</li>
                     <li>
                       frequently update different parts of the UI in response to
                       user's actions
                     </li>
                   </ul>
-                  All too often it is tempting to reach out for heavy-hitters
+                  All too often, it is tempting to reach out for heavy-hitters
                   like React or Next. That is why the challenge of this project
                   was to build a dynamic website with ES6 JavaScript and
                   Model-View-Controller Architecture.
@@ -78,22 +77,22 @@ export default function RecipesForkify() {
                 <GridItem component="ul">
                   <p>This project has:</p>
                   <li>
-                    Four isolated data models: Search, Recipe, Shopping list and
-                    Likes.
+                    Four isolated data models: Search, Recipe, Shopping list,
+                    and Likes.
                   </li>
                   <li>
                     Four corresponding view handlers that are responsible for
                     adding/removing and updating the HTML.
                   </li>
                   <li>
-                    Main controller that has all the logic and operates models
-                    and views.
+                    Main controller that has all the logic, operates models and
+                    views.
                   </li>
                 </GridItem>
                 <GridItem>
                   <p>
                     All of the above is transpiled with Babel, bundled up
-                    together with Webpack and deployed on Github Pages.
+                    together with Webpack, and deployed on Github Pages.
                   </p>
                 </GridItem>
               </GridContainer>
@@ -113,7 +112,7 @@ export default function RecipesForkify() {
                   </p>
                   <p>
                     As I use Webpack here, the website is served from /dist
-                    folder which contains the bundled code.
+                    folder, which contains the bundled code.
                   </p>
                   <p>
                     All the UI manipulations are organized into four "view"
@@ -141,21 +140,21 @@ export default function RecipesForkify() {
                   The data models are organized as ES6 classes that have some
                   methods to manipulate the data stored inside.
                   <p>
-                    Likes data is persisted in localStorage to ensure that saved
-                    recipes are not lost for the user.
+                    "Likes" data is persisted in localStorage to ensure that
+                    saved recipes are not lost for the user.
                   </p>
                   <p>
-                    One of the most challenging and tricky (and probably buggy)
-                    parts was the calculation of the amounts of ingredients for
-                    the recipe. The recipes come from different sources and do
-                    not have the same structure. Most of the ingredients use
-                    fractions to indicate amounts necessary, some of them have
-                    units and some do not. So the tricky part was to parse the
-                    ingredients to separate the amounts from units and from the
-                    rest of the ingredient. After that the app stores this data
-                    separately in an object with decimal amounts to enable
-                    calculations. For the UI this data is changed once again to
-                    fractions.
+                    One of the most challenging and trickiest (and probably
+                    buggiest) part was the calculation of the amounts of
+                    ingredients for the recipe. The recipes come from different
+                    sources and do not have the same structure. Most of the
+                    ingredients use fractions to indicate the necessary amounts,
+                    some of them have units and some do not. So, the tricky part
+                    was to parse the ingredients to separate the amount from the
+                    unit and from the rest of the ingredient. After that, the
+                    app stores this data separately in an object with decimal
+                    amounts to enable calculations. For the UI, this data is
+                    changed once again to fractions.
                   </p>
                 </GridItem>
                 <GridItem>

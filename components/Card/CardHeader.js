@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import clsx from "clsx";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
@@ -15,11 +15,11 @@ const useStyles = makeStyles(styles);
 export default function CardHeader(props) {
   const classes = useStyles();
   const { className, children, color, plain, ...rest } = props;
-  const cardHeaderClasses = classNames({
+  const cardHeaderClasses = clsx({
     [classes.cardHeader]: true,
-    [classes[`${color  }CardHeader`]]: color,
+    [classes[`${color}CardHeader`]]: color,
     [classes.cardHeaderPlain]: plain,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardHeaderClasses} {...rest}>
@@ -32,5 +32,5 @@ CardHeader.propTypes = {
   className: PropTypes.string,
   color: PropTypes.oneOf(["warning", "success", "danger", "info", "primary"]),
   plain: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };

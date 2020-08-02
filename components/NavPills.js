@@ -1,18 +1,18 @@
-import React from 'react';
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
+import React from "react";
+import clsx from "clsx";
+import PropTypes from "prop-types";
+import SwipeableViews from "react-swipeable-views";
 
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import { makeStyles } from "@material-ui/core/styles";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
 
 // core components
-import GridContainer from './GridContainer';
-import GridItem from './GridItem';
+import GridContainer from "./GridContainer";
+import GridItem from "./GridItem";
 
-import styles from '../styles/navPillsStyle';
+import styles from "../styles/navPillsStyle";
 
 const useStyles = makeStyles(styles);
 
@@ -26,7 +26,7 @@ export default function NavPills(props) {
   };
   const classes = useStyles();
   const { tabs, direction, color, horizontal, alignCenter } = props;
-  const flexContainerClasses = classNames({
+  const flexContainerClasses = clsx({
     [classes.flexContainer]: true,
     [classes.horizontalDisplay]: horizontal !== undefined,
   });
@@ -47,7 +47,7 @@ export default function NavPills(props) {
         if (prop.tabIcon !== undefined) {
           icon.icon = <prop.tabIcon className={classes.tabIcon} />;
         }
-        const pillsClasses = classNames({
+        const pillsClasses = clsx({
           [classes.pills]: true,
           [classes.horizontalPills]: horizontal !== undefined,
           [classes.pillsWithIcons]: prop.tabIcon !== undefined,
@@ -70,7 +70,7 @@ export default function NavPills(props) {
   const tabContent = (
     <div className={classes.contentWrapper}>
       <SwipeableViews
-        axis={direction === 'rtl' ? 'x-reverse' : 'x'}
+        axis={direction === "rtl" ? "x-reverse" : "x"}
         index={active}
         onChangeIndex={handleChangeIndex}
       >
@@ -99,7 +99,7 @@ export default function NavPills(props) {
 
 NavPills.defaultProps = {
   active: 0,
-  color: 'primary',
+  color: "primary",
 };
 
 NavPills.propTypes = {
@@ -113,12 +113,12 @@ NavPills.propTypes = {
     })
   ).isRequired,
   color: PropTypes.oneOf([
-    'primary',
-    'warning',
-    'danger',
-    'success',
-    'info',
-    'rose',
+    "primary",
+    "warning",
+    "danger",
+    "success",
+    "info",
+    "rose",
   ]),
   direction: PropTypes.string,
   horizontal: PropTypes.shape({

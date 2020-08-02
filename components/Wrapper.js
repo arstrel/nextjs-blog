@@ -1,16 +1,15 @@
-import Header from './Header';
-import Parallax from './Parallax';
-import Footer from './Footer';
-import HeaderLinks from './HeaderLinks';
-import classNames from 'classnames';
+import Header from "./Header";
+import Parallax from "./Parallax";
+import Footer from "./Footer";
+import HeaderLinks from "./HeaderLinks";
+import clsx from "clsx";
 
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
-import stylesProfile from '../styles/profilePage';
-import stylesGoals from '../styles/goalsStyle';
+import stylesGoals from "../styles/goalsStyle";
 
-const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
+const useStyles = makeStyles(stylesGoals);
 
 export default function Wrapper(props) {
   const classes = useStyles();
@@ -24,14 +23,14 @@ export default function Wrapper(props) {
         fixed
         changeColorOnScroll={{
           height: project ? 250 : 200,
-          color: 'white',
+          color: "white",
         }}
         {...rest}
       />
       <Parallax small={small} filter={filter} imageUrl={imageUrl}>
         {project}
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={clsx(classes.main, classes.mainRaised)}>
         <div>{children}</div>
       </div>
       <Footer />

@@ -1,50 +1,50 @@
-import React from 'react';
+import React from "react";
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import clsx from "clsx";
 // nodejs library to set properties for components
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import styles from '../styles/parallaxStyle';
+import styles from "../styles/parallaxStyle";
 
 const useStyles = makeStyles(styles);
 
 export default function Parallax(props) {
   let windowScrollTop;
-  if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+  if (typeof window !== "undefined" && window.innerWidth >= 768) {
     windowScrollTop = window.pageYOffset / 3;
   } else {
     windowScrollTop = 0;
   }
   const [transform, setTransform] = React.useState(
-    `translate3d(0,${  windowScrollTop  }px,0)`
+    `translate3d(0,${windowScrollTop}px,0)`
   );
   React.useEffect(() => {
     if (window && window.innerWidth >= 768) {
-      window.addEventListener('scroll', resetTransform);
+      window.addEventListener("scroll", resetTransform);
     }
     return function cleanup() {
       if (window && window.innerWidth >= 768) {
-        window.removeEventListener('scroll', resetTransform);
+        window.removeEventListener("scroll", resetTransform);
       }
     };
   });
   const resetTransform = () => {
     windowScrollTop = window.pageYOffset / 3;
-    setTransform(`translate3d(0,${  windowScrollTop  }px,0)`);
+    setTransform(`translate3d(0,${windowScrollTop}px,0)`);
   };
   const {
     filter,
     className,
     children,
     style,
-    imageUrl = '/images/profile-bg.jpg',
+    imageUrl = "/images/profile-bg.jpg",
     small,
   } = props;
   const classes = useStyles();
-  const parallaxClasses = classNames({
+  const parallaxClasses = clsx({
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,

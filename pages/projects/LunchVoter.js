@@ -1,21 +1,20 @@
-import Wrapper from '../../components/Wrapper';
-import GridContainer from '../../components/GridContainer';
-import GridItem from '../../components/GridItem';
-import Button from '../../components/Button';
-import NavPills from '../../components/NavPills';
+import Wrapper from "../../components/Wrapper";
+import GridContainer from "../../components/GridContainer";
+import GridItem from "../../components/GridItem";
+import Button from "../../components/Button";
+import NavPills from "../../components/NavPills";
 
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Storefront from '@material-ui/icons/Storefront';
-import Computer from '@material-ui/icons/Computer';
-import DynamicFeed from '@material-ui/icons/DynamicFeed';
-import MenuBook from '@material-ui/icons/MenuBook';
+import Storefront from "@material-ui/icons/Storefront";
+import Computer from "@material-ui/icons/Computer";
+import DynamicFeed from "@material-ui/icons/DynamicFeed";
+import MenuBook from "@material-ui/icons/MenuBook";
 
-import callToActionStyle from '../../styles/callToActionStyle';
-import stylesProfile from '../../styles/profilePage';
+import callToActionStyle from "../../styles/callToActionStyle";
 
-const useStyles = makeStyles({ ...stylesProfile, ...callToActionStyle });
+const useStyles = makeStyles(callToActionStyle);
 
 export default function LunchVoter() {
   const classes = useStyles();
@@ -62,7 +61,7 @@ export default function LunchVoter() {
         color="primary"
         tabs={[
           {
-            tabButton: 'Story and Features',
+            tabButton: "Story and Features",
             tabIcon: DynamicFeed,
             tabContent: (
               <GridContainer justify="center">
@@ -93,13 +92,13 @@ export default function LunchVoter() {
             ),
           },
           {
-            tabButton: 'Frontend Tech',
+            tabButton: "Frontend Tech",
             tabIcon: Storefront,
             tabContent: (
               <GridContainer justify="center">
                 <GridItem>Powered by React.</GridItem>
                 <GridItem>
-                  To create this simple UI, I've used{' '}
+                  To create this simple UI, I've used{" "}
                   <a href="http://material-ui.com/">Material UI </a>React
                   components library.
                   <p>
@@ -120,7 +119,7 @@ export default function LunchVoter() {
             ),
           },
           {
-            tabButton: 'Backend Tech',
+            tabButton: "Backend Tech",
             tabIcon: Computer,
             tabContent: (
               <GridContainer justify="center">
@@ -153,17 +152,17 @@ export default function LunchVoter() {
             ),
           },
           {
-            tabButton: 'Other',
+            tabButton: "Other",
             tabIcon: MenuBook,
             tabContent: (
               <GridContainer justify="center">
                 <GridItem>
                   For free teer deployments, Heroku winds down the app after a
-                  certain period of inactivity. The lunch voter here does not use
-                  any data persistence, which means the votes get wiped out after
-                  a while automatically! This is perfect for our little use
-                  case. After the team leaves for lunch, the voter is ready for
-                  the next use.
+                  certain period of inactivity. The lunch voter here does not
+                  use any data persistence, which means the votes get wiped out
+                  after a while automatically! This is perfect for our little
+                  use case. After the team leaves for lunch, the voter is ready
+                  for the next use.
                   <p>
                     <a href="https://github.com/arstrel/graphql-apollo-subscriptions">
                       See on GitHub

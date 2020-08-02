@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import clsx from "clsx";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -21,11 +21,12 @@ const useStyles = makeStyles(styles);
 
 export default function ProjectsSection() {
   const classes = useStyles();
-  const imageClasses = classNames(
+  const imageClasses = clsx(
     classes.imgRaised,
-    classes.imgRoundedCircle,
+    classes.imgCircle,
     classes.imgFluid
   );
+  const cardTitleClasses = clsx(classes.title, classes.cardTitle);
   return (
     <div className={classes.section}>
       <h2 className={classes.title}>Some of my projects</h2>
@@ -40,7 +41,7 @@ export default function ProjectsSection() {
                   className={imageClasses}
                 />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={cardTitleClasses}>
                 Kukee-bliss Yoga
                 <br />
                 <small className={classes.smallTitle}>
@@ -73,7 +74,7 @@ export default function ProjectsSection() {
                   className={imageClasses}
                 />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={cardTitleClasses}>
                 Recipes with Forkify
                 <br />
                 <small className={classes.smallTitle}>
@@ -107,7 +108,7 @@ export default function ProjectsSection() {
                   className={imageClasses}
                 />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={cardTitleClasses}>
                 Lunch Voter
                 <br />
                 <small className={classes.smallTitle}>
@@ -137,7 +138,7 @@ export default function ProjectsSection() {
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src="/images/bar.jpg" alt="..." className={imageClasses} />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={cardTitleClasses}>
                 Teep 100%
                 <br />
                 <small className={classes.smallTitle}>
@@ -167,7 +168,7 @@ export default function ProjectsSection() {
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src="/images/fun.jpg" alt="..." className={imageClasses} />
               </GridItem>
-              <h4 className={classes.cardTitle}>
+              <h4 className={cardTitleClasses}>
                 Budgety
                 <br />
                 <small className={classes.smallTitle}>

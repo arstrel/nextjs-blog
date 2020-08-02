@@ -1,26 +1,25 @@
 // nodejs library that concatenates classes
-import classNames from 'classnames';
+import clsx from "clsx";
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import Button from '../components/Button';
-import GridContainer from '../components/GridContainer';
-import GridItem from '../components/GridItem';
-import GoalsSection from '../components/GoalsSection';
-import ProjectsSection from '../components/ProjectsSection';
-import Wrapper from '../components/Wrapper';
+import Button from "../components/Button";
+import GridContainer from "../components/GridContainer";
+import GridItem from "../components/GridItem";
+import GoalsSection from "../components/GoalsSection";
+import ProjectsSection from "../components/ProjectsSection";
+import Wrapper from "../components/Wrapper";
 
-import stylesProfile from '../styles/profilePage';
-import stylesGoals from '../styles/goalsStyle';
+import stylesGoals from "../styles/goalsStyle";
 
-const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
+const useStyles = makeStyles(stylesGoals);
 
 export default function ProfilePage() {
   const classes = useStyles();
-  const imageClasses = classNames(
+  const imageClasses = clsx(
     classes.imgRaised,
-    classes.imgRoundedCircle,
+    classes.imgCircle,
     classes.imgFluid
   );
 
@@ -33,7 +32,7 @@ export default function ProfilePage() {
               <div>
                 <img
                   src="/images/profile.png"
-                  alt="..."
+                  alt="Artemio profile"
                   className={imageClasses}
                 />
               </div>

@@ -1,21 +1,20 @@
-import React from 'react';
+import React from "react";
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import TrackChanges from '@material-ui/icons/TrackChanges';
-import SupervisedUserCircle from '@material-ui/icons/SupervisedUserCircle';
-import Fingerprint from '@material-ui/icons/Fingerprint';
+import TrackChanges from "@material-ui/icons/TrackChanges";
+import SupervisedUserCircle from "@material-ui/icons/SupervisedUserCircle";
+import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
-import GridContainer from './GridContainer';
-import GridItem from './GridItem';
-import InfoArea from './InfoArea';
-import { skillset } from '../lib/constants';
+import GridContainer from "./GridContainer";
+import GridItem from "./GridItem";
+import InfoArea from "./InfoArea";
+import { skillset } from "../lib/constants";
 
-import stylesProfile from '../styles/profilePage';
-import stylesGoals from '../styles/goalsStyle';
+import stylesGoals from "../styles/goalsStyle";
 
-const useStyles = makeStyles({ ...stylesGoals, ...stylesProfile });
+const useStyles = makeStyles(stylesGoals);
 
 export default function GoalsSection() {
   const classes = useStyles();

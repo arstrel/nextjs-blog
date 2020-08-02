@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import clsx from "clsx";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
@@ -15,9 +15,9 @@ const useStyles = makeStyles(styles);
 export default function CardBody(props) {
   const classes = useStyles();
   const { className, children, ...rest } = props;
-  const cardBodyClasses = classNames({
+  const cardBodyClasses = clsx({
     [classes.cardBody]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardBodyClasses} {...rest}>
@@ -28,5 +28,5 @@ export default function CardBody(props) {
 
 CardBody.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
