@@ -1,73 +1,74 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import clsx from "clsx";
+import clsx from 'clsx';
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 
 // core components
-import styles from "../styles/parallaxStyle";
+import styles from '../styles/parallaxStyle';
 
 const useStyles = makeStyles(styles);
 
 export default function Parallax(props) {
-  let windowScrollTop;
-  if (typeof window !== "undefined" && window.innerWidth >= 768) {
-    windowScrollTop = window.pageYOffset / 3;
-  } else {
-    windowScrollTop = 0;
-  }
-  const [transform, setTransform] = React.useState(
-    `translate3d(0,${windowScrollTop}px,0)`
-  );
-  React.useEffect(() => {
-    if (window && window.innerWidth >= 768) {
-      window.addEventListener("scroll", resetTransform);
-    }
-    return function cleanup() {
-      if (window && window.innerWidth >= 768) {
-        window.removeEventListener("scroll", resetTransform);
-      }
-    };
-  });
-  const resetTransform = () => {
-    windowScrollTop = window.pageYOffset / 3;
-    setTransform(`translate3d(0,${windowScrollTop}px,0)`);
-  };
-  const {
-    filter,
-    className,
-    children,
-    style,
-    imageUrl = "/images/profile-bg.jpg",
-    small,
-  } = props;
-  const classes = useStyles();
-  const parallaxClasses = clsx({
-    [classes.parallax]: true,
-    [classes.filter]: filter,
-    [classes.small]: small,
-    [className]: className !== undefined,
-  });
-  return (
-    <div
-      className={parallaxClasses}
-      style={{
-        ...style,
-        backgroundImage: `url(${imageUrl})`,
-        transform,
-      }}
-    >
-      {children}
-    </div>
-  );
+	let windowScrollTop;
+	if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+		windowScrollTop = window.pageYOffset / 3;
+	} else {
+		windowScrollTop = 0;
+	}
+	const [transform, setTransform] = React.useState(
+		`translate3d(0,${windowScrollTop}px,0)`
+	);
+	React.useEffect(() => {
+		if (window && window.innerWidth >= 768) {
+			window.addEventListener('scroll', resetTransform);
+		}
+		return function cleanup() {
+			if (window && window.innerWidth >= 768) {
+				window.removeEventListener('scroll', resetTransform);
+			}
+		};
+	});
+	const resetTransform = () => {
+		windowScrollTop = window.pageYOffset / 3;
+		setTransform(`translate3d(0,${windowScrollTop}px,0)`);
+	};
+	const {
+		filter,
+		className,
+		children,
+		style,
+		imageUrl = '/images/profile-bg.jpg',
+		small,
+	} = props;
+	const classes = useStyles();
+	const parallaxClasses = clsx({
+		[classes.parallax]: true,
+		[classes.filter]: filter,
+		[classes.small]: small,
+		[className]: className !== undefined,
+	});
+	return (
+		<div
+			className={parallaxClasses}
+			style={{
+				...style,
+				backgroundImage: `url(${imageUrl})`,
+				transform,
+			}}
+		>
+			{children}
+		</div>
+	);
 }
 
 Parallax.propTypes = {
-  className: PropTypes.string,
-  filter: PropTypes.bool,
-  children: PropTypes.node,
-  style: PropTypes.string,
-  small: PropTypes.bool,
+	className: PropTypes.string,
+	imageUrl: PropTypes.string,
+	filter: PropTypes.bool,
+	children: PropTypes.node,
+	style: PropTypes.string,
+	small: PropTypes.bool,
 };
