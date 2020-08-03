@@ -25,11 +25,17 @@ export default function NodeBlogster() {
 				>
 					<h1 className={classes.title}>Private Blogster</h1>
 					<h4 className={classes.smallDescription}>
-						At the first glance Blogster is nothing special with a pretty bare
+						At the first glance, Blogster is nothing special, with a pretty bare
 						bones UI. The power is hidden under the hood. Blogster is here to
-						show: how to make a scalable file upload with AWS S3, how to
-						intercept Mongoose queries and implement lighting fast caching with
-						Redis, the road to ultimate testing setup and so much more.
+						show:
+						<GridItem component="ul">
+							<li>how to make a scalable file upload with AWS S3</li>
+							<li>
+								how to intercept Mongoose queries and implement lighting fast
+								caching with Redis
+							</li>
+							<li>the road to ultimate testing setup and so much more.</li>
+						</GridItem>
 					</h4>
 					<br />
 					<Button
@@ -63,19 +69,47 @@ export default function NodeBlogster() {
 						tabContent: (
 							<GridContainer justify="center">
 								<GridItem>
-									The UI flow of Blogster is very basic and only available after
-									login with Google. For a logged in user, Blogster offers to
-									create a private post with or without a picture attached, the
-									posts are then displayed in a list and that's it. The absolute
-									focus here was to learn, use and show some advanced Node
-									concepts. More details on that in the next section.
-								</GridItem>
-								<GridItem>
+									The way modern software defies distance has always fascinated
+									me. I see beauty in connecting these peaces together.
 									<p>
-										The frontend is made with React, Redux, and Redux-thunk that
-										allows to have functions as actions.{' '}
+										In Blogster, when the user wants to add a picture to the
+										post, quite a few things have to work perfectly together to
+										make it possible:
 									</p>
-									<p>Styles are made with Materialize.</p>
+									<ol>
+										<li>
+											The browser grasps meta data about the file, including
+											things like file type and file name
+										</li>
+										<li>
+											The browser sends this information to the Blogster's
+											backend server
+										</li>
+										<li>
+											Blogster's backend connects to AWS S3 bucket to obtain a
+											very special pre-signed link. This link is valid only for
+											this particular file, can be used only one time, from a
+											particular origin and during the next few minutes
+										</li>
+										<li>
+											Using this link, the browser sends the picture directly to
+											S3 bucket to avoid unnecessary work by our own server
+										</li>
+										<li>
+											In response, S3 bucket gives to the browser a new filename
+											and a key to retrieve this particular file
+										</li>
+										<li>
+											This info gets back to Blogster server, which saves it in
+											remote Mongo Database, together with the user's Google ID
+										</li>
+									</ol>
+									<p>
+										All of this requires carefull configuration, a lot of
+										packages and, frankly speaking, seems a bit like a magic to
+										me. <br />
+										The magic that I can be a part of!
+									</p>
 								</GridItem>
 							</GridContainer>
 						),
@@ -98,21 +132,21 @@ export default function NodeBlogster() {
 									check that the application is not broken whenever new commits
 									are integrated into the main branch.
 									<p>
-										Blogster have it all with Travis-CI that automatically
+										Blogster has it all with Travis-CI, which automatically
 										detects new commit to Github, runs the build and tests the
 										app. If the build passes the tests, Travis triggers new
 										deployement on Heroku. Every change that passes all stages
-										of this process is released to production. There's no human
+										of this process is released to production. There is no human
 										intervention, and only a failed test will prevent a new
 										change to be deployed.
 									</p>
 								</GridItem>
 								<GridItem>
 									<p>
-										For most learning projects and tutorials basic Node/Express
-										server is more then enough. With Blogster I wanted to go
+										For most learning projects and tutorials, basic Node/Express
+										server is more than enough. With Blogster, I wanted to go
 										further and explore how to implement caching with Redis. If
-										the app have tens of thousands of users or more, you have to
+										the app has tens of thousands of users or more, you have to
 										think about using the database efficiently and avoid
 										duplicate queries.
 									</p>
@@ -132,47 +166,19 @@ export default function NodeBlogster() {
 						tabContent: (
 							<GridContainer justify="center">
 								<GridItem>
-									The way modern software defys distance always fascinated me. I
-									see beauty in connecting this peaces together.
+									The UI flow of Blogster is very basic and only available after
+									login with Google. For a logged-in user, Blogster offers to
+									create a private post with or without a picture attached; the
+									posts are then displayed in a list and that's it. The absolute
+									focus here was to learn, use and show some advanced Node
+									concepts. More details on that in the next section.
+								</GridItem>
+								<GridItem>
 									<p>
-										In Blogster, when the user wants to add a picture to the
-										post, quite a few things have to work perfectly together to
-										make it possible:
+										The frontend is made with React, Redux, Redux-thunk (that
+										allows to have functions as actions), and Redux-forms.{' '}
 									</p>
-									<ol>
-										<li>
-											The browser grasps meta data about file, including things
-											like file type and file name
-										</li>
-										<li>
-											The browser sends this information to the Blogster's
-											backend server
-										</li>
-										<li>
-											Blogster's backend connects to AWS S3 bucket to obtain a
-											very special pre-signed link. This link is valid only for
-											this particular file, can be used only one time, from a
-											particular origin and during the next few minutes.
-										</li>
-										<li>
-											Using this link, the browser sends the picture directly to
-											S3 bucket to avoid unnecessary work by our own server
-										</li>
-										<li>
-											In response S3 gives to a browser new filename and a key
-											to retrieve this particular file
-										</li>
-										<li>
-											This gets back to Blogster server, which saves it in
-											remote Mongo Database, togehter with user's Google ID
-										</li>
-									</ol>
-									<p>
-										All of this requires carefull configuration, a lot of
-										packages and, frankly speaking, seems a bit like a magic to
-										me. <br />
-										The magic that I can be a part of!
-									</p>
+									<p>Styles are made with Materialize.</p>
 								</GridItem>
 								<GridItem>
 									<p>
