@@ -52,7 +52,9 @@ export default function ProjectsSection() {
 								<p className={classes.description}>
 									Straight out of the Ironhack coding bootcamp, this project
 									leverages the power of MERN stack to enable South Carolina
-									yoga studio to better serve their students.
+									yoga studio to better serve their students. Features
+									extensive, well-documented REST API, two-level authorization
+									and custom yoga routine builder.
 								</p>
 							</CardBody>
 							<CardFooter className={classes.justifyCenter}>
@@ -91,6 +93,41 @@ export default function ProjectsSection() {
 							</CardBody>
 							<CardFooter className={classes.justifyCenter}>
 								<Link href="/projects/RecipesForkify">
+									<Button round color="primary" className={classes.margin5}>
+										See Details
+									</Button>
+								</Link>
+							</CardFooter>
+						</Card>
+					</GridItem>
+
+					<GridItem xs={12} sm={12} md={4}>
+						<Card plain>
+							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+								<img
+									src="/images/blogster-avatar.jpeg"
+									alt="..."
+									className={imageClasses}
+								/>
+							</GridItem>
+							<h4 className={cardTitleClasses}>
+								Private Blogster
+								<br />
+								<small className={classes.smallTitle}>
+									React, Redux, CI/CD with Travis/Heroku, Redis, AWS S3
+								</small>
+							</h4>
+							<CardBody>
+								<p className={classes.description}>
+									Blogster is a showcase of advanced Node concepts. It features
+									powerful and scalable backend technologies, such as Google
+									Auth, Redis to cache MongoDB queries, use of AWS S3 bucket
+									with pre-signed links to store images, extensive testing with
+									Jest. Has fully implemented CI/CD pipeline and so on.
+								</p>
+							</CardBody>
+							<CardFooter className={classes.justifyCenter}>
+								<Link href="/projects/NodeBlogster">
 									<Button round color="primary" className={classes.margin5}>
 										See Details
 									</Button>
