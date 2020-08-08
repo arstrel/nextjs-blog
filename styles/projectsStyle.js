@@ -25,6 +25,7 @@ const projectsStyle = {
 	imgFluid: {
 		maxWidth: '100%',
 		height: 'auto',
+		margin: '0 auto',
 	},
 	imgCircle: {
 		borderRadius: '50% !important',
