@@ -51,8 +51,14 @@ const callToActionStyle = {
 		margin: '20px 0',
 	},
 	imgFluid: {
-		maxWidth: '100%',
 		height: 'auto',
+		maxWidth: '100%',
+	},
+	imgLavu: {
+		maxWidth: '100%',
+		borderRadius: '6px !important',
+		height: '400px',
+		margin: '0 auto 15px auto',
 	},
 };
 

@@ -36,6 +36,41 @@ export default function ProjectsSection() {
 						<Card plain>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
+									src="/images/lavu-avatar.png"
+									alt="..."
+									className={imageClasses}
+								/>
+							</GridItem>
+							<h4 className={cardTitleClasses}>
+								Lavu Control Panel (Web)
+								<br />
+								<small className={classes.smallTitle}>
+									React, Node, Redis, Apollo, GraphQL, MySQL
+								</small>
+							</h4>
+							<CardBody>
+								<p className={classes.description}>
+									A Full-stack web app for administration of the Lavu restaurant
+									management system. Control panel is a center location to work
+									with customer's account, handling the workforce, make
+									schedules, inspect transactions and deal with hundreds of
+									available settings.
+								</p>
+							</CardBody>
+							<CardFooter className={classes.justifyCenter}>
+								<Link href="/projects/LavuCP">
+									<Button round color="primary" className={classes.margin5}>
+										See Details
+									</Button>
+								</Link>
+							</CardFooter>
+						</Card>
+					</GridItem>
+
+					<GridItem xs={12} sm={12} md={4}>
+						<Card plain>
+							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+								<img
 									src="/images/yoga.jpg"
 									alt="..."
 									className={imageClasses}
@@ -192,35 +227,6 @@ export default function ProjectsSection() {
 							</CardBody>
 							<CardFooter className={classes.justifyCenter}>
 								<Link href="/projects/Teep">
-									<Button round color="primary" className={classes.margin5}>
-										See Details
-									</Button>
-								</Link>
-							</CardFooter>
-						</Card>
-					</GridItem>
-
-					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
-							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-								<img src="/images/fun.jpg" alt="..." className={imageClasses} />
-							</GridItem>
-							<h4 className={cardTitleClasses}>
-								Budgety
-								<br />
-								<small className={classes.smallTitle}>
-									Vanilla JavaScript, MVC Pattern with the use of IIFE
-								</small>
-							</h4>
-							<CardBody>
-								<p className={classes.description}>
-									A small project with a mighty architecture. This pure vanilla
-									JavaScript project is built using MVC pattern and separation
-									of concerns for Budget, App and UI logic.
-								</p>
-							</CardBody>
-							<CardFooter className={classes.justifyCenter}>
-								<Link href="/projects/Budgety">
 									<Button round color="primary" className={classes.margin5}>
 										See Details
 									</Button>
