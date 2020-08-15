@@ -57,8 +57,8 @@ export default function LavuCP() {
 							<GridContainer justify="center">
 								<GridItem>
 									<p>
-										Control panel was the project that I contributed to at Lavu
-										continuously for eight month. We were a team of five
+										I contributed at Lavu for eight month towards the
+										development of Control Panel. We were a team of five
 										developers, two QA engineers, one designer, and one project
 										manager.
 									</p>
@@ -77,26 +77,26 @@ export default function LavuCP() {
 										</ul>
 									</div>
 									<p>
-										Over the course of my time with Lavu, I worked on every part
-										mentioned above.
+										I worked on every part mentioned above over the course of my
+										time with Lavu.
 									</p>
 									<div>
-										<strong>Some features implemented by me:</strong>
+										<strong>Features I implemented:</strong>
 										<ul>
 											<li>
-												Re-wrote timecards calculating logic in it's entirety.
+												Re-wrote timecards calculating logic in its entirety.
 												Timecards used to calculate time worked by an employee
-												within a selected period. This time is then used to
+												within a selected period. This data was then used to
 												calculate appropriate pay, all within this same module.
-												The complications come from the fact that the system
-												accounts for regular time, overtime and 2x pay. It has
-												to take into account multiple user settings regarding
-												the holidays, off days, paid and unpaid breaks, employee
-												pay grade and so on.
+												Complications came from the fact that the system
+												accounted for regular time, overtime, and double time
+												pay. It had to take into account multiple user settings
+												regarding the holidays, off days, paid and unpaid
+												breaks, employee pay grade and so on.
 											</li>
 											<li>
 												Optimized workflow in workforce module to implement
-												extensive client-side error checking in forms, make the
+												extensive client-side error checking in forms, made the
 												module mobile-friendly. Re-implemented all the forms
 												using Material UI components.
 											</li>
@@ -107,7 +107,7 @@ export default function LavuCP() {
 											</li>
 											<li>
 												Implemented the feature to show customer's signature for
-												a given transaction
+												a given transaction.
 											</li>
 											<li>
 												Implemented heavily customized transactions table with
