@@ -57,13 +57,14 @@ export default function LavuCP() {
 							<GridContainer justify="center">
 								<GridItem>
 									<p>
-										Control panel was the project that I contributed on at Lavu
-										continuously for 8 month. We were a team of 5 developer, 2
-										QA, 1 designer, 1 project manager.
+										Control panel was the project that I contributed to at Lavu
+										continuously for eight month. We were a team of five
+										developers, two QA engineers, one designer, and one project
+										manager.
 									</p>
-									<p>
+									<div>
 										Control panel is at the heart of customer's interaction with
-										the Lavu restaurant management system when it comes to
+										the Lavu restaurant management system when it comes to:
 										<ul>
 											<li>Summary and Statistics</li>
 											<li>Scheduling</li>
@@ -74,13 +75,13 @@ export default function LavuCP() {
 												Customer's account with Lavu, payments and invoices
 											</li>
 										</ul>
-									</p>
+									</div>
 									<p>
 										Over the course of my time with Lavu, I worked on every part
 										mentioned above.
 									</p>
-									<p>
-										<strong>Some features implemented by me</strong>
+									<div>
+										<strong>Some features implemented by me:</strong>
 										<ul>
 											<li>
 												Re-wrote timecards calculating logic in it's entirety.
@@ -88,10 +89,10 @@ export default function LavuCP() {
 												within a selected period. This time is then used to
 												calculate appropriate pay, all within this same module.
 												The complications come from the fact that the system
-												accouns for regular time, overtime and 2x pay. It has t
-												take into account multiple user settings in regards to
-												the holidays, off days, payed and unpayed breaks,
-												employee pay grade and so on.
+												accounts for regular time, overtime and 2x pay. It has
+												to take into account multiple user settings regarding
+												the holidays, off days, paid and unpaid breaks, employee
+												pay grade and so on.
 											</li>
 											<li>
 												Optimized workflow in workforce module to implement
@@ -118,7 +119,7 @@ export default function LavuCP() {
 												format.
 											</li>
 										</ul>
-									</p>
+									</div>
 								</GridItem>
 							</GridContainer>
 						),

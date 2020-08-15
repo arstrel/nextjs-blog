@@ -56,8 +56,8 @@ const callToActionStyle = {
 	},
 	imgLavu: {
 		maxWidth: '100%',
+		maxHeight: '400px',
 		borderRadius: '6px !important',
-		height: '400px',
 		margin: '0 auto 15px auto',
 	},
 };
