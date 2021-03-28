@@ -1,16 +1,15 @@
 // nodejs library that concatenates classes
-import clsx from 'clsx';
 // @material-ui/core components
+import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-
 // core components
 import Button from '../components/Button';
+import GoalsSection from '../components/GoalsSection';
 import GridContainer from '../components/GridContainer';
 import GridItem from '../components/GridItem';
-import GoalsSection from '../components/GoalsSection';
+import AwsBadges from '../components/AwsBadges';
 import ProjectsSection from '../components/ProjectsSection';
 import Wrapper from '../components/Wrapper';
-
 import stylesGoals from '../styles/goalsStyle';
 
 const useStyles = makeStyles(stylesGoals);
@@ -84,6 +83,7 @@ export default function ProfilePage() {
 						and practicing yoga.
 					</h5>
 				</div>
+				<AwsBadges />
 				<GoalsSection />
 				<ProjectsSection />
 			</div>

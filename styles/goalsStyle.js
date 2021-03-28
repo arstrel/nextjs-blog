@@ -81,6 +81,13 @@ const productStyle = {
 	techItemsContainer: {
 		justifyContent: 'center',
 	},
+	awsBadgeItem: {
+		width: 'auto',
+	},
+	awsBadgeImg: {
+		height: '110px',
+		cursor: 'pointer',
+	},
 };
 
 export default productStyle;
