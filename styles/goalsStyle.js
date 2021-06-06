@@ -87,6 +87,12 @@ const productStyle = {
 	awsBadgeImg: {
 		height: '110px',
 		cursor: 'pointer',
+		transition: 'all 0.15s ease-in-out',
+		'&:hover': {
+			transform: 'scale(1.05)',
+			filter:
+				'drop-shadow(0 5px 5px rgba(0,0,0,0.25)) drop-shadow(0 5px 5px rgba(0,0,0,0.22))',
+		},
 	},
 };
 

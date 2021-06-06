@@ -13,20 +13,33 @@ export default function AwsBadges() {
 		<GridContainer justify="center" direction="row">
 			<GridItem className={classes.awsBadgeItem}>
 				<a
-					href="https://www.youracclaim.com/badges/0ba8668f-5377-4fc0-b28e-b8bace69e9ee/public_url"
+					href="https://www.credly.com/badges/26480d88-e5c6-430b-a880-af5289fa29a9/public_url"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<img
-						src="/images/aws-certified-developer-associate.png"
-						alt="AWS Certified Developer"
+						src="/images/aws-certified-solutions-architect-associate.png"
+						alt="AWS Certified Solutions Architect - Associate"
 						className={classes.awsBadgeImg}
 					/>
 				</a>
 			</GridItem>
 			<GridItem className={classes.awsBadgeItem}>
 				<a
-					href="https://www.youracclaim.com/badges/745d4550-0761-4185-ad08-7a8d18e6c0dc/public_url"
+					href="https://www.credly.com/badges/0ba8668f-5377-4fc0-b28e-b8bace69e9ee/public_url"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="/images/aws-certified-developer-associate.png"
+						alt="AWS Certified Developer - Associate"
+						className={classes.awsBadgeImg}
+					/>
+				</a>
+			</GridItem>
+			<GridItem className={classes.awsBadgeItem}>
+				<a
+					href="https://www.credly.com/badges/8e8b6a0d-2e2b-4513-9567-e74b258d22d2/public_url"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
