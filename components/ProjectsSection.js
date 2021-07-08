@@ -33,7 +33,7 @@ export default function ProjectsSection() {
 			<div>
 				<GridContainer>
 					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
+						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
 									src="/images/lavu-avatar.png"
@@ -68,7 +68,7 @@ export default function ProjectsSection() {
 					</GridItem>
 
 					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
+						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
 									src="/images/yoga.jpg"
@@ -103,7 +103,7 @@ export default function ProjectsSection() {
 					</GridItem>
 
 					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
+						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
 									src="/images/recipe-avatar.jpeg"
@@ -137,7 +137,7 @@ export default function ProjectsSection() {
 					</GridItem>
 
 					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
+						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
 									src="/images/blogster-avatar.jpeg"
@@ -172,7 +172,7 @@ export default function ProjectsSection() {
 					</GridItem>
 
 					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
+						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
 									src="/images/lunchVoter.jpeg"
@@ -206,7 +206,7 @@ export default function ProjectsSection() {
 					</GridItem>
 
 					<GridItem xs={12} sm={12} md={4}>
-						<Card plain>
+						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img src="/images/bar.jpg" alt="..." className={imageClasses} />
 							</GridItem>

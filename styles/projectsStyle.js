@@ -58,6 +58,9 @@ const projectsStyle = {
 	margin5: {
 		margin: '5px',
 	},
+	singleCard: {
+		height: '90%',
+	},
 };
 
 export default projectsStyle;
