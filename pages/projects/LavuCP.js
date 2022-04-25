@@ -13,8 +13,24 @@ const useStyles = makeStyles(callToActionStyle);
 export default function LavuCP() {
 	const classes = useStyles();
 
+	const project = (
+		<div className={classes.container}>
+			<GridContainer>
+				<GridItem xs={12} sm={12} md={6} className={classes.actionContainer}>
+					<h1 className={classes.title}>Lavu Control Panel</h1>
+					<h4 className={classes.smallDescription}>
+						A yoga studio in South Carolina had only a facebook page for web
+						presence and a big dream of making yoga classes affordable and
+						available for the local community. The owner wanted a way to create
+						custom daily routines for students of different ages and levels...
+					</h4>
+				</GridItem>
+			</GridContainer>
+		</div>
+	);
+
 	return (
-		<Wrapper small imageUrl="/images/lavu-bg.jpeg">
+		<Wrapper project={project} imageUrl="/images/lavu-bg.jpg">
 			<NavPills
 				alignCenter
 				active={0}

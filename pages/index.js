@@ -9,6 +9,7 @@ import GridContainer from '../components/GridContainer';
 import GridItem from '../components/GridItem';
 import AwsBadges from '../components/AwsBadges';
 import ProjectsSection from '../components/ProjectsSection';
+import ExperienceSection from '../components/ExperienceSection';
 import Wrapper from '../components/Wrapper';
 import stylesGoals from '../styles/goalsStyle';
 
@@ -37,7 +38,7 @@ export default function ProfilePage() {
 							</div>
 							<div className={classes.name}>
 								<h2 className={classes.title}>Artem Streltsov</h2>
-								<h5>Full Stack Web Developer</h5>
+								<h5>Full Stack Software Engineer</h5>
 								<Button
 									justIcon
 									link
@@ -85,6 +86,7 @@ export default function ProfilePage() {
 				</div>
 				<AwsBadges />
 				<GoalsSection />
+				<ExperienceSection />
 				<ProjectsSection />
 			</div>
 		</Wrapper>

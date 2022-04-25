@@ -21,7 +21,7 @@ export default function Wrapper({
 	return (
 		<div>
 			<Header
-				color="transparent"
+				color="semiTransparent"
 				brand="Artemio.tech"
 				rightLinks={<HeaderLinks />}
 				fixed

@@ -29,36 +29,36 @@ export default function ProjectsSection() {
 	const cardTitleClasses = clsx(classes.title, classes.cardTitle);
 	return (
 		<div className={classes.section}>
-			<h2 className={classes.title}>Some of my projects</h2>
+			<h2 className={classes.title}>Notable Projects</h2>
 			<div>
 				<GridContainer>
 					<GridItem xs={12} sm={12} md={4}>
 						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
-									src="/images/lavu-avatar.png"
+									src="/images/gittix-store.png"
 									alt="..."
 									className={imageClasses}
 								/>
 							</GridItem>
 							<h4 className={cardTitleClasses}>
-								Lavu Control Panel (Web)
+								E-Commerce ticket store
 								<br />
 								<small className={classes.smallTitle}>
-									React, Node, Redis, Apollo, GraphQL, MySQL
+									Microservices built with Node, Next.js (React), Docker and
+									Kubernetes
 								</small>
 							</h4>
 							<CardBody>
 								<p className={classes.description}>
-									A Full-stack web app for administration of the Lavu restaurant
-									management system. Control panel is a center location to work
-									with customer's account, handling the workforce, make
-									schedules, inspect transactions and deal with hundreds of
-									available settings.
+									A Full-stack web app made with microservices, server-side
+									rendering and event-based architecture. All the services are
+									dockerized and deployed to kubernetes cluster hosted in
+									Digital Ocean with CI/CD pipeline powered by GitHub actions.
 								</p>
 							</CardBody>
 							<CardFooter className={classes.justifyCenter}>
-								<Link href="/projects/LavuCP">
+								<Link href="/projects/GittixStore">
 									<Button round color="primary" className={classes.margin5}>
 										See Details
 									</Button>
@@ -106,40 +106,6 @@ export default function ProjectsSection() {
 						<Card plain className={classes.singleCard}>
 							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
 								<img
-									src="/images/recipe-avatar.jpeg"
-									alt="..."
-									className={imageClasses}
-								/>
-							</GridItem>
-							<h4 className={cardTitleClasses}>
-								Recipes with Forkify
-								<br />
-								<small className={classes.smallTitle}>
-									ES6 JavaScript, Webpack, Babel, MVC Pattern
-								</small>
-							</h4>
-							<CardBody>
-								<p className={classes.description}>
-									This recipe project uses 3rd party API to search recipes from
-									different sources. Features servings calculation, and
-									maintains likes list in local storage. Done completely in ES6
-									JavaScript with the use of webpack and babel.
-								</p>
-							</CardBody>
-							<CardFooter className={classes.justifyCenter}>
-								<Link href="/projects/RecipesForkify">
-									<Button round color="primary" className={classes.margin5}>
-										See Details
-									</Button>
-								</Link>
-							</CardFooter>
-						</Card>
-					</GridItem>
-
-					<GridItem xs={12} sm={12} md={4}>
-						<Card plain className={classes.singleCard}>
-							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-								<img
 									src="/images/blogster-avatar.jpeg"
 									alt="..."
 									className={imageClasses}
@@ -163,6 +129,40 @@ export default function ProjectsSection() {
 							</CardBody>
 							<CardFooter className={classes.justifyCenter}>
 								<Link href="/projects/NodeBlogster">
+									<Button round color="primary" className={classes.margin5}>
+										See Details
+									</Button>
+								</Link>
+							</CardFooter>
+						</Card>
+					</GridItem>
+
+					<GridItem xs={12} sm={12} md={4}>
+						<Card plain className={classes.singleCard}>
+							<GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+								<img
+									src="/images/recipe-avatar.jpeg"
+									alt="..."
+									className={imageClasses}
+								/>
+							</GridItem>
+							<h4 className={cardTitleClasses}>
+								Recipes with Forkify
+								<br />
+								<small className={classes.smallTitle}>
+									ES6 JavaScript, Webpack, Babel, MVC Pattern
+								</small>
+							</h4>
+							<CardBody>
+								<p className={classes.description}>
+									This recipe project uses 3rd party API to search recipes from
+									different sources. Features servings calculation, and
+									maintains likes list in local storage. Done completely in ES6
+									JavaScript with the use of webpack and babel.
+								</p>
+							</CardBody>
+							<CardFooter className={classes.justifyCenter}>
+								<Link href="/projects/RecipesForkify">
 									<Button round color="primary" className={classes.margin5}>
 										See Details
 									</Button>

@@ -30,14 +30,17 @@ const callToActionStyle = {
 	actionContainer: {
 		backgroundColor: 'rgba(250, 210, 180, 0.5)',
 		borderRadius: '5px',
+		padding: '15px',
 	},
 	actionContainerTeep: {
 		backgroundColor: 'rgba(220, 240, 220, 0.5)',
 		borderRadius: '5px',
+		padding: '15px',
 	},
 	actionContainerWhite: {
 		backgroundColor: 'rgba(220, 220, 220, 0.5)',
 		borderRadius: '5px',
+		padding: '15px',
 	},
 	'@media (max-width: 576px)': {
 		smallDescription: {

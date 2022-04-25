@@ -68,6 +68,7 @@ const productStyle = {
 		background: '#FFFFFF',
 		position: 'relative',
 		zIndex: '3',
+		minHeight: '65vh',
 	},
 	mainRaised: {
 		margin: '-60px 30px 0px',

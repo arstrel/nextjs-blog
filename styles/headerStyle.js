@@ -7,6 +7,7 @@ import {
 	warningColor,
 	dangerColor,
 	roseColor,
+	semiTransparentColor,
 	transition,
 	boxShadow,
 	drawerWidth,
@@ -103,6 +104,12 @@ const headerStyle = {
 		color: '#FFFFFF',
 		boxShadow:
 			'0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)',
+	},
+	semiTransparent: {
+		backgroundColor: semiTransparentColor,
+		color: '#FFFFFF',
+		boxShadow:
+			'0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(67, 57, 57, 0.28)',
 	},
 	transparent: {
 		backgroundColor: 'transparent !important',

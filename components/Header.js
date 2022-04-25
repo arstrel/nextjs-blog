@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
@@ -17,24 +17,22 @@ import styles from '../styles/headerStyle';
 
 const useStyles = makeStyles(styles);
 
-export default function Header(props) {
+export default function Header({
+	color,
+	rightLinks,
+	leftLinks,
+	brand,
+	fixed,
+	absolute,
+	changeColorOnScroll,
+}) {
 	const classes = useStyles();
-	const [mobileOpen, setMobileOpen] = React.useState(false);
-	React.useEffect(() => {
-		if (props.changeColorOnScroll) {
-			window.addEventListener('scroll', headerColorChange);
-		}
-		return function cleanup() {
-			if (props.changeColorOnScroll) {
-				window.removeEventListener('scroll', headerColorChange);
-			}
-		};
-	});
+	const [mobileOpen, setMobileOpen] = useState(false);
+
 	const handleDrawerToggle = () => {
 		setMobileOpen(!mobileOpen);
 	};
 	const headerColorChange = () => {
-		const { color, changeColorOnScroll } = props;
 		const windowsScrollTop = window.pageYOffset;
 		if (windowsScrollTop > changeColorOnScroll.height) {
 			document.body
@@ -52,18 +50,31 @@ export default function Header(props) {
 				.classList.remove(classes[changeColorOnScroll.color]);
 		}
 	};
-	const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+
 	const appBarClasses = clsx({
 		[classes.appBar]: true,
 		[classes[color]]: color,
 		[classes.absolute]: absolute,
 		[classes.fixed]: fixed,
 	});
+
 	const brandComponent = (
 		<Link href="/">
 			<Button className={classes.title}>{brand}</Button>
 		</Link>
 	);
+
+	useEffect(() => {
+		if (changeColorOnScroll) {
+			window.addEventListener('scroll', headerColorChange);
+		}
+		return function cleanup() {
+			if (changeColorOnScroll) {
+				window.removeEventListener('scroll', headerColorChange);
+			}
+		};
+	});
+
 	return (
 		<AppBar className={appBarClasses}>
 			<Toolbar className={classes.container}>
@@ -122,6 +133,7 @@ Header.propTypes = {
 		'warning',
 		'danger',
 		'transparent',
+		'semiTransparent',
 		'white',
 		'rose',
 		'dark',

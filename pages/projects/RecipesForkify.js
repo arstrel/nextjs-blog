@@ -28,6 +28,17 @@ export default function RecipesForkify() {
 						ingredients according to desired servings, save the recipes in Liked
 						list persisted in localStorage and maintain shopping list.
 					</h4>
+					<p>
+						<strong>
+							<a
+								href="https://cors-anywhere.herokuapp.com/corsdemo"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								Enable CORS proxy for demo to work
+							</a>
+						</strong>
+					</p>
 					<br />
 					<Button
 						color="danger"

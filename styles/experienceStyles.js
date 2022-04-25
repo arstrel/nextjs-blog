@@ -1,6 +1,6 @@
-const projectsStyle = {
+const experienceStyles = {
 	section: {
-		padding: '70px 0',
+		padding: '40px 0',
 		textAlign: 'center',
 	},
 	title: {
@@ -64,4 +64,4 @@ const projectsStyle = {
 	},
 };
 
-export default projectsStyle;
+export default experienceStyles;

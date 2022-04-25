@@ -41,7 +41,7 @@ export default function NodeBlogster() {
 					<Button
 						color="danger"
 						size="lg"
-						href="http://node-blogster.herokuapp.com/"
+						href="https://node-blogster.herokuapp.com/"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
